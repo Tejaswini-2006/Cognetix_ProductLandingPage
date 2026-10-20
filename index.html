@@ -4,59 +4,93 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>NOVA — Smart Productivity Hub | Organize, Focus & Flow</title>
-  <meta name="description" content="NOVA is the next-generation smart productivity hub. Orchestrate tasks, track deep-work analytics, and streamline team collaboration in one unified workspace.">
-  <meta name="keywords" content="productivity hub, task management, focus timer, team collaboration, deep work analytics, workflow organizer">
+  <title>ECOVIBE — Conscious Living. Timeless Luxury.</title>
+  <meta name="description" content="ECOVIBE creates thoughtfully imagined sustainable essentials for a more mindful home, a slower ritual, and a better everyday. Handcrafted luxury meets conscious living.">
+  <meta name="keywords" content="ECOVIBE, sustainable luxury, eco-friendly lifestyle, conscious living, organic cotton tote, borosilicate water bottle, artisanal homeware, zero waste essentials">
   <meta name="author" content="Tejaswini Rakhunde">
 
   <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="NOVA — Smart Productivity Hub">
-  <meta property="og:description" content="Supercharge your daily focus and master task orchestration with NOVA.">
+  <meta property="og:title" content="ECOVIBE — Conscious Living. Timeless Luxury.">
+  <meta property="og:description" content="Thoughtfully imagined essentials for a more mindful home, a slower ritual, and a better everyday.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/images/dashboard-preview.jpg">
+  <meta property="og:image" content="assets/images/hero-lifestyle.jpg">
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="assets/icons/logo.svg">
 
-  <!-- Google Fonts: Plus Jakarta Sans -->
+  <!-- Google Fonts: Playfair Display (Serif) & Plus Jakarta Sans (Sans-serif) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Ambient Background Glows -->
-  <div class="ambient-glow ambient-glow-top" aria-hidden="true"></div>
-  <div class="ambient-glow ambient-glow-center" aria-hidden="true"></div>
+  <!-- Skip to Content for Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <!-- A. Navigation Bar -->
+  <!-- A. Announcement Bar -->
+  <aside class="announcement-bar" id="announcementBar" aria-label="Announcement">
+    <div class="container announcement-container">
+      <span class="announcement-badge" aria-hidden="true">✦</span>
+      <p class="announcement-text">
+        LESS WASTE. MORE WONDER. DISCOVER CONSCIOUS LUXURY.
+      </p>
+      <a href="#collection" class="announcement-link" id="announcementLink">
+        <span>Explore Collection</span>
+        <svg class="icon-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </a>
+    </div>
+  </aside>
+
+  <!-- B. Header and Navigation -->
   <header class="site-header" id="header">
     <div class="container nav-container">
-      <a href="#hero" class="brand-logo" id="brandLogo" aria-label="NOVA Homepage">
-        <img src="assets/icons/logo.svg" alt="NOVA Logo" class="brand-icon" width="36" height="36">
-        <span class="brand-name">NOVA</span>
-        <span class="brand-badge">Hub</span>
+      <!-- ECOVIBE Wordmark Logo -->
+      <a href="#hero" class="brand-logo" id="brandLogo" aria-label="ECOVIBE Homepage">
+        <img src="assets/icons/logo.svg" alt="ECOVIBE Botanical Emblem" class="brand-icon" width="36" height="36">
+        <div class="brand-text-group">
+          <span class="brand-name">ECOVIBE</span>
+          <span class="brand-tagline">CONSCIOUS LUXURY</span>
+        </div>
       </a>
 
       <!-- Desktop & Mobile Navigation Links -->
       <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
         <ul class="nav-list">
-          <li class="nav-item"><a href="#features" class="nav-link" id="navFeatures">Features</a></li>
-          <li class="nav-item"><a href="#benefits" class="nav-link" id="navBenefits">Benefits</a></li>
-          <li class="nav-item"><a href="#how-it-works" class="nav-link" id="navHowItWorks">How It Works</a></li>
-          <li class="nav-item"><a href="#testimonials" class="nav-link" id="navTestimonials">Testimonials</a></li>
-          <li class="nav-item"><a href="#contact" class="nav-link" id="navContact">Contact</a></li>
+          <li class="nav-item"><a href="#hero" class="nav-link active" id="navHome">Home</a></li>
+          <li class="nav-item"><a href="#collection" class="nav-link" id="navCollection">Collection</a></li>
+          <li class="nav-item"><a href="#philosophy" class="nav-link" id="navPhilosophy">Our Philosophy</a></li>
+          <li class="nav-item"><a href="#impact" class="nav-link" id="navImpact">Impact</a></li>
+          <li class="nav-item"><a href="#journal" class="nav-link" id="navJournal">Journal</a></li>
         </ul>
+
+        <!-- Mobile Drawer Action -->
         <div class="nav-mobile-actions">
-          <button type="button" class="btn btn-primary btn-sm btn-nav-cta" id="mobileGetStartedBtn">Get Started</button>
+          <a href="#collection" class="btn btn-primary btn-block" id="mobileExploreBtn">Explore Collection</a>
         </div>
       </nav>
 
-      <!-- Desktop CTA & Mobile Toggle -->
+      <!-- Navigation Header Actions (Bag Counter & CTAs) -->
       <div class="nav-actions">
-        <button type="button" class="btn btn-primary btn-sm btn-nav-cta" id="navGetStartedBtn">Get Started</button>
+        <!-- Interactive Bag Trigger Button -->
+        <button type="button" class="btn-bag" id="bagToggleBtn" aria-label="Open Shopping Bag Drawer" aria-controls="bagDrawer" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/>
+            <path d="M3 6h18"/>
+            <path d="M16 10a4 4 0 0 1-8 0"/>
+          </svg>
+          <span class="bag-count" id="bagCountBadge">0</span>
+        </button>
+
+        <!-- Desktop Explore Collection CTA -->
+        <a href="#collection" class="btn btn-primary btn-sm btn-nav-cta" id="navExploreCta">Explore Collection</a>
+
+        <!-- Mobile Menu Hamburger Button -->
         <button type="button" class="mobile-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
           <span class="toggle-bar"></span>
           <span class="toggle-bar"></span>
@@ -66,162 +100,107 @@
     </div>
   </header>
 
+  <!-- Mobile Nav Overlay -->
+  <div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
+
+  <!-- MAIN CONTENT -->
   <main id="main-content">
-    <!-- B. Hero Section -->
+    <!-- C. Hero Section -->
     <section class="hero-section" id="hero" aria-label="Hero Introduction">
       <div class="container hero-container">
+        <!-- Hero Editorial Text Content -->
         <div class="hero-content reveal-on-scroll">
-          <div class="hero-pill-badge" id="heroBadge">
-            <span class="pill-sparkle">✦</span>
-            <span class="pill-text">Engineered for High-Output Professionals</span>
-            <span class="pill-highlight">v2.4 Live</span>
+          <div class="hero-eyebrow">
+            <span class="eyebrow-symbol">✦</span>
+            <span class="eyebrow-text">THE ART OF CONSCIOUS LIVING</span>
           </div>
 
           <h1 class="hero-title">
-            Work Smarter, <br>
-            <span class="gradient-text">Flow Faster</span> with NOVA.
+            Live beautifully.<br>
+            <span class="serif-italic">Leave a lighter</span> footprint.
           </h1>
 
           <p class="hero-subtitle">
-            The intelligent productivity hub that orchestrates your tasks, blocks distraction, and aligns your daily execution with deep-work science.
+            Thoughtfully imagined essentials for a more mindful home, a slower ritual, and a better everyday.
           </p>
 
           <div class="hero-cta-group">
-            <button type="button" class="btn btn-primary btn-lg" id="heroGetStartedBtn">
-              <span>Get Started Free</span>
-              <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <a href="#collection" class="btn btn-primary btn-lg" id="heroExploreBtn">
+              <span>Explore the Collection</span>
+              <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
                 <polyline points="12 5 19 12 12 19"></polyline>
               </svg>
-            </button>
-            <a href="#how-it-works" class="btn btn-secondary btn-lg" id="heroLearnMoreBtn">
-              <svg class="btn-play-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="10"></circle>
-                <polygon points="10 8 16 12 10 16 10 8" fill="currentColor"></polygon>
-              </svg>
-              <span>See How It Works</span>
+            </a>
+            <a href="#philosophy" class="btn btn-outline btn-lg" id="heroPhilosophyBtn">
+              <span>Our Philosophy</span>
             </a>
           </div>
 
-          <!-- Social Proof Rating -->
+          <!-- Hero Trust & Community Proof -->
           <div class="hero-social-proof">
-            <div class="avatar-group" aria-label="Active users">
-              <img src="assets/images/avatar-1.jpg" alt="Active user Sarah" class="user-avatar" width="40" height="40">
-              <img src="assets/images/avatar-2.jpg" alt="Active user Alex" class="user-avatar" width="40" height="40">
-              <img src="assets/images/avatar-3.jpg" alt="Active user Priya" class="user-avatar" width="40" height="40">
-              <div class="user-avatar-count">+14k</div>
+            <div class="avatar-group" aria-label="Mindful community members">
+              <img src="assets/images/avatar-1.jpg" alt="Community member Maya" class="user-avatar" width="40" height="40" loading="eager">
+              <img src="assets/images/avatar-2.jpg" alt="Community member Rohan" class="user-avatar" width="40" height="40" loading="eager">
+              <img src="assets/images/avatar-3.jpg" alt="Community member Tara" class="user-avatar" width="40" height="40" loading="eager">
+              <div class="user-avatar-count" aria-hidden="true">+12k</div>
             </div>
             <div class="social-proof-text">
               <div class="star-rating" aria-label="5 out of 5 stars">
-                <span class="star-icon">★</span>
-                <span class="star-icon">★</span>
-                <span class="star-icon">★</span>
-                <span class="star-icon">★</span>
-                <span class="star-icon">★</span>
-                <span class="rating-number">4.9/5</span>
+                <span class="star-icon" aria-hidden="true">★</span>
+                <span class="star-icon" aria-hidden="true">★</span>
+                <span class="star-icon" aria-hidden="true">★</span>
+                <span class="star-icon" aria-hidden="true">★</span>
+                <span class="star-icon" aria-hidden="true">★</span>
+                <span class="rating-number">4.95</span>
               </div>
-              <p class="rating-label">From 14,000+ engineers, designers, & founders</p>
+              <p class="rating-label">Embraced by 12,000+ mindful homes worldwide</p>
             </div>
           </div>
         </div>
 
-        <!-- Hero Visual Mockup & Interactive Showcase -->
+        <!-- Hero Editorial Lifestyle Image Composition -->
         <div class="hero-visual reveal-on-scroll">
-          <div class="mockup-frame">
-            <div class="mockup-header-bar">
-              <div class="mockup-dots">
-                <span class="dot dot-red"></span>
-                <span class="dot dot-yellow"></span>
-                <span class="dot dot-green"></span>
-              </div>
-              <div class="mockup-url-bar">
-                <span class="lock-icon">🔒</span>
-                <span>app.nova-hub.com/workspace</span>
-              </div>
-              <div class="mockup-status-tag">⚡ Live Demo</div>
+          <div class="lifestyle-card-wrapper">
+            <div class="lifestyle-image-frame">
+              <img 
+                src="assets/images/hero-lifestyle.jpg" 
+                alt="ECOVIBE morning ritual scene featuring organic linen tote, sage solstice bottle, ceramic incense bowl, and lush monstera plant in sunlit room" 
+                class="hero-lifestyle-img" 
+                width="720" 
+                height="540" 
+                loading="eager"
+              >
+              <!-- Subtle Image Texture Overlay -->
+              <div class="image-gradient-overlay" aria-hidden="true"></div>
             </div>
 
-            <!-- Rich Interactive Dashboard Card Embedded in Hero -->
-            <div class="dashboard-showcase">
-              <img src="assets/images/dashboard-preview.jpg" alt="NOVA Product Dashboard Interface preview showing daily focus score, time tracking, and task kanban board" class="dashboard-main-img" width="1024" height="576" loading="eager">
-
-              <!-- Floating Interactive Focus Widget -->
-              <div class="interactive-focus-widget" id="heroInteractiveWidget">
-                <div class="widget-header">
-                  <div class="widget-title-wrap">
-                    <span class="pulse-indicator"></span>
-                    <span class="widget-title">Active Focus Block</span>
-                  </div>
-                  <span class="widget-tag">Deep Work</span>
-                </div>
-
-                <!-- Live Timer Component -->
-                <div class="widget-timer-block">
-                  <div class="timer-display" id="focusTimerDisplay" aria-live="polite">25:00</div>
-                  <div class="timer-controls">
-                    <button type="button" class="btn-timer-action" id="timerToggleBtn" aria-label="Start or pause focus timer">
-                      <svg id="timerPlayIcon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                      </svg>
-                      <span id="timerBtnText">Start Focus</span>
-                    </button>
-                    <button type="button" class="btn-timer-reset" id="timerResetBtn" aria-label="Reset focus timer" title="Reset Timer">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
-                        <path d="M3 3v5h5"></path>
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-
-                <!-- Interactive Task Progress Mini-list -->
-                <div class="widget-tasks">
-                  <div class="widget-task-stats">
-                    <span class="tasks-label">Sprint Tasks</span>
-                    <span class="tasks-counter" id="completedTaskCounter">1 of 3 Done</span>
-                  </div>
-                  <ul class="task-checkbox-list">
-                    <li class="task-item">
-                      <label class="task-checkbox-label">
-                        <input type="checkbox" class="task-checkbox" checked id="taskCheck1" data-task-id="1">
-                        <span class="checkbox-custom"></span>
-                        <span class="task-name">Review Q3 product roadmap</span>
-                      </label>
-                    </li>
-                    <li class="task-item">
-                      <label class="task-checkbox-label">
-                        <input type="checkbox" class="task-checkbox" id="taskCheck2" data-task-id="2">
-                        <span class="checkbox-custom"></span>
-                        <span class="task-name">Finalize NOVA design tokens</span>
-                      </label>
-                    </li>
-                    <li class="task-item">
-                      <label class="task-checkbox-label">
-                        <input type="checkbox" class="task-checkbox" id="taskCheck3" data-task-id="3">
-                        <span class="checkbox-custom"></span>
-                        <span class="task-name">Sprint sync & architecture review</span>
-                      </label>
-                    </li>
-                  </ul>
-                </div>
+            <!-- Floating Badge: Circular Philosophy -->
+            <div class="floating-badge badge-top" id="heroBadgeCircular">
+              <div class="badge-icon-wrap">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/>
+                  <path d="M3 3v5h5"/>
+                  <path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/>
+                  <path d="M16 21h5v-5"/>
+                </svg>
               </div>
-
-              <!-- Floating Metric Chip -->
-              <div class="floating-chip floating-chip-score" aria-hidden="true">
-                <div class="chip-icon">⚡</div>
-                <div class="chip-info">
-                  <span class="chip-val">94%</span>
-                  <span class="chip-lbl">Flow Quality</span>
-                </div>
+              <div class="badge-content">
+                <span class="badge-title">100% Circular Intent</span>
+                <span class="badge-caption">Designed for longevity & renewal</span>
               </div>
+            </div>
 
-              <!-- Floating Metric Chip 2 -->
-              <div class="floating-chip floating-chip-streak" aria-hidden="true">
-                <div class="chip-icon">🔥</div>
-                <div class="chip-info">
-                  <span class="chip-val">12 Days</span>
-                  <span class="chip-lbl">Focus Streak</span>
-                </div>
+            <!-- Floating Badge: Artisanal Craft -->
+            <div class="floating-badge badge-bottom" id="heroBadgeCraft">
+              <div class="badge-icon-wrap">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                </svg>
+              </div>
+              <div class="badge-content">
+                <span class="badge-title">Artisanal Heirloom Quality</span>
+                <span class="badge-caption">Hand-finished natural materials</span>
               </div>
             </div>
           </div>
@@ -229,703 +208,828 @@
       </div>
     </section>
 
-    <!-- C. Features Section -->
-    <section class="section features-section" id="features" aria-labelledby="featuresHeading">
+    <!-- D. Brand Values Strip -->
+    <section class="brand-values-section" id="values" aria-label="Brand Core Principles">
       <div class="container">
-        <div class="section-header reveal-on-scroll">
-          <span class="section-badge">Powerful Capabilities</span>
-          <h2 class="section-title" id="featuresHeading">Everything You Need to Master Your Output</h2>
+        <div class="values-grid">
+          <!-- Principle 1 -->
+          <div class="value-item reveal-on-scroll">
+            <div class="value-icon-box">
+              <img src="assets/icons/leaf.svg" alt="" class="value-icon" width="24" height="24" aria-hidden="true">
+            </div>
+            <div class="value-text-group">
+              <h3 class="value-title">Thoughtful Materials</h3>
+              <p class="value-desc">Organic unbleached fibers, recycled borosilicate, and sustainably sourced woods.</p>
+            </div>
+          </div>
+
+          <!-- Principle 2 -->
+          <div class="value-item reveal-on-scroll">
+            <div class="value-icon-box">
+              <img src="assets/icons/enduring.svg" alt="" class="value-icon" width="24" height="24" aria-hidden="true">
+            </div>
+            <div class="value-text-group">
+              <h3 class="value-title">Designed to Last</h3>
+              <p class="value-desc">Heirloom-grade construction built to endure years of cherished daily rituals.</p>
+            </div>
+          </div>
+
+          <!-- Principle 3 -->
+          <div class="value-item reveal-on-scroll">
+            <div class="value-icon-box">
+              <img src="assets/icons/circular.svg" alt="" class="value-icon" width="24" height="24" aria-hidden="true">
+            </div>
+            <div class="value-text-group">
+              <h3 class="value-title">Everyday Reusability</h3>
+              <p class="value-desc">Practical solutions designed to replace hundreds of disposable items naturally.</p>
+            </div>
+          </div>
+
+          <!-- Principle 4 -->
+          <div class="value-item reveal-on-scroll">
+            <div class="value-icon-box">
+              <img src="assets/icons/zen.svg" alt="" class="value-icon" width="24" height="24" aria-hidden="true">
+            </div>
+            <div class="value-text-group">
+              <h3 class="value-title">Less, But Better</h3>
+              <p class="value-desc">Architectural minimalism that values quiet enduring utility over seasonal churn.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- E. Featured Collection -->
+    <section class="collection-section" id="collection" aria-label="Featured Product Collection">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center reveal-on-scroll">
+          <div class="section-eyebrow">CURATED ESSENTIALS</div>
+          <h2 class="section-title">Everyday objects. <span class="serif-italic">Elevated.</span></h2>
           <p class="section-subtitle">
-            Say goodbye to fragmented tabs, lost notes, and broken coordination. NOVA brings structure, analytics, and flow state into one unified hub.
+            Considered essentials that make conscious choices feel effortless.
           </p>
 
-          <!-- Interactive Feature Category Filter Tabs -->
-          <div class="filter-tabs" role="tablist" aria-label="Feature categories">
-            <button type="button" class="filter-tab active" role="tab" aria-selected="true" data-filter="all" id="filterAll">All Features</button>
-            <button type="button" class="filter-tab" role="tab" aria-selected="false" data-filter="organization" id="filterOrg">Organization</button>
-            <button type="button" class="filter-tab" role="tab" aria-selected="false" data-filter="analytics" id="filterAnalytics">Analytics</button>
-            <button type="button" class="filter-tab" role="tab" aria-selected="false" data-filter="collaboration" id="filterCollab">Collaboration</button>
+          <!-- Category Filter Tabs -->
+          <div class="filter-tabs-wrapper" role="tablist" aria-label="Product Categories">
+            <button type="button" class="filter-tab active" role="tab" aria-selected="true" data-filter="all" id="tabAll">All Objects</button>
+            <button type="button" class="filter-tab" role="tab" aria-selected="false" data-filter="carry" id="tabCarry">Bags & Carry</button>
+            <button type="button" class="filter-tab" role="tab" aria-selected="false" data-filter="drinkware" id="tabDrinkware">Drinkware</button>
+            <button type="button" class="filter-tab" role="tab" aria-selected="false" data-filter="home" id="tabHome">Home & Ritual</button>
           </div>
         </div>
 
-        <div class="features-grid" id="featuresGrid">
-          <!-- Feature 1: Smart Task Management -->
-          <article class="feature-card reveal-on-scroll" data-category="organization" id="featureSmartTasks">
-            <div class="feature-card-inner">
-              <div class="feature-icon-wrapper" style="--icon-accent: #8b5cf6;">
-                <img src="assets/icons/task.svg" alt="" class="feature-icon" width="28" height="28" aria-hidden="true">
+        <!-- Product Grid (6 Fictional Demonstration Products) -->
+        <div class="product-grid" id="productGrid">
+          <!-- Product 1: The Everyday Tote -->
+          <article class="product-card reveal-on-scroll" data-category="carry" data-id="tote">
+            <div class="product-media-wrap">
+              <span class="product-tag">Bestseller</span>
+              <img 
+                src="assets/images/product-tote.jpg" 
+                alt="The Everyday Tote: natural organic cotton canvas with vegetable-tanned leather straps" 
+                class="product-img" 
+                width="400" 
+                height="400" 
+                loading="lazy"
+              >
+              <div class="product-quick-actions">
+                <button type="button" class="btn-quick-view" data-action="quickview" data-product="tote" aria-label="Discover The Everyday Tote">
+                  <span>Discover Object</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                </button>
               </div>
-              <div class="feature-card-header">
-                <span class="feature-tag">Task &amp; Flow</span>
-                <h3 class="feature-title">Smart Task Management</h3>
+            </div>
+            <div class="product-info">
+              <div class="product-meta-row">
+                <span class="product-category">Bags & Carry</span>
+                <span class="product-price">₹3,450</span>
               </div>
-              <p class="feature-desc">
-                Intelligently prioritize initiatives based on Eisenhower urgency matrices. Break massive projects into sub-tasks with automated estimation.
-              </p>
-              <ul class="feature-points">
-                <li><img src="assets/icons/check.svg" alt="" class="check-icon" aria-hidden="true"> AI priority scoring &amp; auto-tagging</li>
-                <li><img src="assets/icons/check.svg" alt="" class="check-icon" aria-hidden="true"> Nested subtasks and checklist trees</li>
-                <li><img src="assets/icons/check.svg" alt="" class="check-icon" aria-hidden="true"> Quick inline task creation via shortcuts</li>
-              </ul>
+              <h3 class="product-title">The Everyday Tote</h3>
+              <p class="product-desc">Heavyweight 16oz raw organic canvas with reinforced vegetable-tanned straps and inner laptop divider.</p>
+              <div class="product-card-footer">
+                <button type="button" class="btn btn-outline-dark btn-sm btn-discover" data-action="quickview" data-product="tote">
+                  Discover Product
+                </button>
+                <button type="button" class="btn btn-primary btn-sm btn-add-bag" data-action="add" data-product="tote">
+                  <span>Add to Bag</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </button>
+              </div>
             </div>
           </article>
 
-          <!-- Feature 2: Productivity Analytics -->
-          <article class="feature-card reveal-on-scroll" data-category="analytics" id="featureAnalytics">
-            <div class="feature-card-inner">
-              <div class="feature-icon-wrapper" style="--icon-accent: #06b6d4;">
-                <img src="assets/icons/analytics.svg" alt="" class="feature-icon" width="28" height="28" aria-hidden="true">
+          <!-- Product 2: The Solstice Bottle -->
+          <article class="product-card reveal-on-scroll" data-category="drinkware" data-id="bottle">
+            <div class="product-media-wrap">
+              <span class="product-tag">New Edition</span>
+              <img 
+                src="assets/images/product-bottle.jpg" 
+                alt="The Solstice Bottle: double-wall borosilicate glass with soft sage sleeve and champagne brass cap" 
+                class="product-img" 
+                width="400" 
+                height="400" 
+                loading="lazy"
+              >
+              <div class="product-quick-actions">
+                <button type="button" class="btn-quick-view" data-action="quickview" data-product="bottle" aria-label="Discover The Solstice Bottle">
+                  <span>Discover Object</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                </button>
               </div>
-              <div class="feature-card-header">
-                <span class="feature-tag">Intelligence</span>
-                <h3 class="feature-title">Productivity Analytics</h3>
+            </div>
+            <div class="product-info">
+              <div class="product-meta-row">
+                <span class="product-category">Drinkware</span>
+                <span class="product-price">₹2,850</span>
               </div>
-              <p class="feature-desc">
-                Uncover deep-work patterns and pinpoint your peak cognitive hours. Gain comprehensive weekly output analytics without invasive tracking.
-              </p>
-              <ul class="feature-points">
-                <li><img src="assets/icons/check.svg" alt="" class="check-icon" aria-hidden="true"> Real-time daily focus score metrics</li>
-                <li><img src="assets/icons/check.svg" alt="" class="check-icon" aria-hidden="true"> Burnout prediction and energy monitoring</li>
-                <li><img src="assets/icons/check.svg" alt="" class="check-icon" aria-hidden="true"> Exportable PDF &amp; CSV summary reports</li>
-              </ul>
+              <h3 class="product-title">The Solstice Bottle</h3>
+              <p class="product-desc">Double-wall insulated borosilicate glass with tactile soft sage silicone grip and brushed champagne brass cap.</p>
+              <div class="product-card-footer">
+                <button type="button" class="btn btn-outline-dark btn-sm btn-discover" data-action="quickview" data-product="bottle">
+                  Discover Product
+                </button>
+                <button type="button" class="btn btn-primary btn-sm btn-add-bag" data-action="add" data-product="bottle">
+                  <span>Add to Bag</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </button>
+              </div>
             </div>
           </article>
 
-          <!-- Feature 3: Team Collaboration -->
-          <article class="feature-card reveal-on-scroll" data-category="collaboration" id="featureTeam">
-            <div class="feature-card-inner">
-              <div class="feature-icon-wrapper" style="--icon-accent: #ec4899;">
-                <img src="assets/icons/team.svg" alt="" class="feature-icon" width="28" height="28" aria-hidden="true">
+          <!-- Product 3: The Terra Home Set -->
+          <article class="product-card reveal-on-scroll" data-category="home" data-id="terra">
+            <div class="product-media-wrap">
+              <span class="product-tag">Artisanal</span>
+              <img 
+                src="assets/images/product-terra.jpg" 
+                alt="The Terra Home Set: handmade speckled stoneware ceramic incense bowl and soy candle vessel" 
+                class="product-img" 
+                width="400" 
+                height="400" 
+                loading="lazy"
+              >
+              <div class="product-quick-actions">
+                <button type="button" class="btn-quick-view" data-action="quickview" data-product="terra" aria-label="Discover The Terra Home Set">
+                  <span>Discover Object</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                </button>
               </div>
-              <div class="feature-card-header">
-                <span class="feature-tag">Collaboration</span>
-                <h3 class="feature-title">Team Collaboration</h3>
+            </div>
+            <div class="product-info">
+              <div class="product-meta-row">
+                <span class="product-category">Home & Ritual</span>
+                <span class="product-price">₹4,200</span>
               </div>
-              <p class="feature-desc">
-                Ditch endless status update meetings. Share workspaces, assign deliverables with context, and coordinate sprint handoffs asynchronously.
-              </p>
-              <ul class="feature-points">
-                <li><img src="assets/icons/check.svg" alt="" class="check-icon" aria-hidden="true"> Shared project boards with live sync</li>
-                <li><img src="assets/icons/check.svg" alt="" class="check-icon" aria-hidden="true"> Granular role &amp; workspace permissions</li>
-                <li><img src="assets/icons/check.svg" alt="" class="check-icon" aria-hidden="true"> Threaded comments &amp; markdown attachments</li>
-              </ul>
+              <h3 class="product-title">The Terra Home Set</h3>
+              <p class="product-desc">Artisanal speckled stoneware incense bowl with refillable hand-poured pure botanic soy wax candle.</p>
+              <div class="product-card-footer">
+                <button type="button" class="btn btn-outline-dark btn-sm btn-discover" data-action="quickview" data-product="terra">
+                  Discover Product
+                </button>
+                <button type="button" class="btn btn-primary btn-sm btn-add-bag" data-action="add" data-product="terra">
+                  <span>Add to Bag</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </button>
+              </div>
             </div>
           </article>
 
-          <!-- Feature 4: Progress Tracking -->
-          <article class="feature-card reveal-on-scroll" data-category="analytics" id="featureProgress">
-            <div class="feature-card-inner">
-              <div class="feature-icon-wrapper" style="--icon-accent: #10b981;">
-                <img src="assets/icons/tracking.svg" alt="" class="feature-icon" width="28" height="28" aria-hidden="true">
+          <!-- Product 4: The Ritual Travel Kit -->
+          <article class="product-card reveal-on-scroll" data-category="home" data-id="travel">
+            <div class="product-media-wrap">
+              <span class="product-tag">Zero Waste</span>
+              <img 
+                src="assets/images/product-travel.jpg" 
+                alt="The Ritual Travel Kit: natural linen pouch, bamboo cutlery, wooden toothbrush, and reusable cotton rounds" 
+                class="product-img" 
+                width="400" 
+                height="400" 
+                loading="lazy"
+              >
+              <div class="product-quick-actions">
+                <button type="button" class="btn-quick-view" data-action="quickview" data-product="travel" aria-label="Discover The Ritual Travel Kit">
+                  <span>Discover Object</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                </button>
               </div>
-              <div class="feature-card-header">
-                <span class="feature-tag">Milestones</span>
-                <h3 class="feature-title">Progress Tracking</h3>
+            </div>
+            <div class="product-info">
+              <div class="product-meta-row">
+                <span class="product-category">Home & Travel</span>
+                <span class="product-price">₹2,950</span>
               </div>
-              <p class="feature-desc">
-                Track progress against your overarching OKRs with visual burndown charts, completion trends, and automated milestone velocity alerts.
-              </p>
-              <ul class="feature-points">
-                <li><img src="assets/icons/check.svg" alt="" class="check-icon" aria-hidden="true"> Sprint velocity &amp; burndown graphs</li>
-                <li><img src="assets/icons/check.svg" alt="" class="check-icon" aria-hidden="true"> Quarterly OKR alignment mapping</li>
-                <li><img src="assets/icons/check.svg" alt="" class="check-icon" aria-hidden="true"> Visual streak calendar &amp; achievements</li>
-              </ul>
+              <h3 class="product-title">The Ritual Travel Kit</h3>
+              <p class="product-desc">Pure unbleached linen roll-up pouch with organic bamboo cutlery, natural wooden brush, and washable cotton pads.</p>
+              <div class="product-card-footer">
+                <button type="button" class="btn btn-outline-dark btn-sm btn-discover" data-action="quickview" data-product="travel">
+                  Discover Product
+                </button>
+                <button type="button" class="btn btn-primary btn-sm btn-add-bag" data-action="add" data-product="travel">
+                  <span>Add to Bag</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </button>
+              </div>
             </div>
           </article>
+        </div>
 
-          <!-- Feature 5: Smart Reminders -->
-          <article class="feature-card reveal-on-scroll" data-category="organization" id="featureReminders">
-            <div class="feature-card-inner">
-              <div class="feature-icon-wrapper" style="--icon-accent: #f59e0b;">
-                <img src="assets/icons/reminder.svg" alt="" class="feature-icon" width="28" height="28" aria-hidden="true">
-              </div>
-              <div class="feature-card-header">
-                <span class="feature-tag">Focus Guard</span>
-                <h3 class="feature-title">Smart Reminders</h3>
-              </div>
-              <p class="feature-desc">
-                Never get pulled out of deep work by rigid timers. NOVA senses your work rhythms and nudges you to take science-backed regenerative breaks.
-              </p>
-              <ul class="feature-points">
-                <li><img src="assets/icons/check.svg" alt="" class="check-icon" aria-hidden="true"> Context-aware gentle focus nudges</li>
-                <li><img src="assets/icons/check.svg" alt="" class="check-icon" aria-hidden="true"> Two-way calendar sync (Google / Outlook)</li>
-                <li><img src="assets/icons/check.svg" alt="" class="check-icon" aria-hidden="true"> Intelligent snooze &amp; reschedule engine</li>
-              </ul>
-            </div>
-          </article>
-
-          <!-- Feature 6: Workflow Organization -->
-          <article class="feature-card reveal-on-scroll" data-category="organization" id="featureWorkflow">
-            <div class="feature-card-inner">
-              <div class="feature-icon-wrapper" style="--icon-accent: #6366f1;">
-                <img src="assets/icons/workflow.svg" alt="" class="feature-icon" width="28" height="28" aria-hidden="true">
-              </div>
-              <div class="feature-card-header">
-                <span class="feature-tag">Workflow Hub</span>
-                <h3 class="feature-title">Workflow Organization</h3>
-              </div>
-              <p class="feature-desc">
-                Work your way with flexible views. Pivot instantly between Kanban boards, structured tables, calendar views, and interactive timelines.
-              </p>
-              <ul class="feature-points">
-                <li><img src="assets/icons/check.svg" alt="" class="check-icon" aria-hidden="true"> Seamless Kanban, List &amp; Timeline views</li>
-                <li><img src="assets/icons/check.svg" alt="" class="check-icon" aria-hidden="true"> Recurring workflow triggers &amp; templates</li>
-                <li><img src="assets/icons/check.svg" alt="" class="check-icon" aria-hidden="true"> Universal quick search &amp; tagging</li>
-              </ul>
-            </div>
-          </article>
+        <!-- Sample Disclaimer Sub-Banner -->
+        <div class="collection-note text-center">
+          <p>✦ All prices and items shown are fictional demonstration products for the ECOVIBE educational showcase. Clicking "Add to Bag" updates the demo cart.</p>
         </div>
       </div>
     </section>
 
-    <!-- D. Benefits Section -->
-    <section class="section benefits-section" id="benefits" aria-labelledby="benefitsHeading">
+    <!-- F. Brand Philosophy (Split Layout) -->
+    <section class="philosophy-section" id="philosophy" aria-label="Brand Philosophy">
+      <div class="container philosophy-container">
+        <!-- Text Column -->
+        <div class="philosophy-content reveal-on-scroll">
+          <div class="section-eyebrow">OUR CORE ETHOS</div>
+          <h2 class="section-title">
+            Better choices begin with <span class="serif-italic">everyday rituals.</span>
+          </h2>
+          <p class="philosophy-lead">
+            We believe sustainability should feel natural, beautiful, and enduring. ECOVIBE brings together considered design and practical everyday essentials to encourage a more mindful way of living.
+          </p>
+          <p class="philosophy-body">
+            Too often, conscious living has been presented as an exercise in compromise — rough textures, sterile aesthetics, or disposable novelties. We take a different path. By uniting timeless craft, pure materials, and understated luxury, we create pieces you will cherish for decades.
+          </p>
+
+          <!-- Interactive Philosophy Pillars -->
+          <div class="philosophy-pillars">
+            <div class="pillar-card active" data-pillar="origin">
+              <div class="pillar-header">
+                <span class="pillar-number">01</span>
+                <h4 class="pillar-title">Honest Provenance</h4>
+              </div>
+              <p class="pillar-text">Transparent origins for every raw fiber, mineral glaze, and reclaimed alloy we specify.</p>
+            </div>
+
+            <div class="pillar-card" data-pillar="slow">
+              <div class="pillar-header">
+                <span class="pillar-number">02</span>
+                <h4 class="pillar-title">Slow Architecture</h4>
+              </div>
+              <p class="pillar-text">Crafted in small, considered batches where durability and tactile satisfaction take priority over speed.</p>
+            </div>
+
+            <div class="pillar-card" data-pillar="circular">
+              <div class="pillar-header">
+                <span class="pillar-number">03</span>
+                <h4 class="pillar-title">Closed-Loop Care</h4>
+              </div>
+              <p class="pillar-text">Thoughtful maintenance guides and modular replacement components that extend every object's life.</p>
+            </div>
+          </div>
+
+          <div class="philosophy-action">
+            <a href="#impact" class="btn btn-outline-dark" id="philosophyLearnMoreBtn">
+              <span>Explore Our Impact Model</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Visual / Image Column -->
+        <div class="philosophy-visual reveal-on-scroll">
+          <div class="philosophy-image-frame">
+            <img 
+              src="assets/images/philosophy-ritual.jpg" 
+              alt="Hands holding artisanal ceramic tea cup on wooden sill with eucalyptus branch and linen throw" 
+              class="philosophy-img" 
+              width="640" 
+              height="520" 
+              loading="lazy"
+            >
+            <div class="philosophy-quote-card">
+              <div class="quote-mark" aria-hidden="true">“</div>
+              <blockquote class="quote-text">
+                When an object is made with care, we keep it longer. That simple human truth changes everything.
+              </blockquote>
+              <cite class="quote-author">— ECOVIBE Atelier Notes, 2026</cite>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- G. Benefits Section -->
+    <section class="benefits-section" id="benefits" aria-label="Brand Benefits">
       <div class="container">
-        <div class="section-header reveal-on-scroll">
-          <span class="section-badge">The NOVA Advantage</span>
-          <h2 class="section-title" id="benefitsHeading">Why High Performers Choose NOVA</h2>
+        <div class="section-header text-center reveal-on-scroll">
+          <div class="section-eyebrow">DESIGNED WITH INTENTION</div>
+          <h2 class="section-title">Good for your rituals. <span class="serif-italic">Thoughtful by design.</span></h2>
           <p class="section-subtitle">
-            Most productivity tools create more administrative overhead than they save. NOVA removes friction so you can focus on work that moves the needle.
+            Purpose-driven design meets understated elegance in every corner of your life.
           </p>
         </div>
 
         <div class="benefits-grid">
           <!-- Benefit 1 -->
           <div class="benefit-card reveal-on-scroll">
-            <div class="benefit-number">01</div>
-            <div class="benefit-content">
-              <h3 class="benefit-title">Reclaim 8+ Hours Every Week</h3>
-              <p class="benefit-desc">
-                Automated scheduling and smart task triage eliminate manual morning planning. Wake up every day with a crystal-clear, optimized execution plan.
-              </p>
-              <div class="benefit-metric-chip">
-                <span class="metric-val">+42%</span>
-                <span class="metric-text">Average increase in weekly completed goals</span>
-              </div>
+            <div class="benefit-icon-wrapper">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
             </div>
+            <h3 class="benefit-title">Designed for Everyday Use</h3>
+            <p class="benefit-desc">Ergonomic shapes, balanced weight, and effortless cleaning designed to integrate seamlessly into your morning and evening rituals.</p>
+            <div class="benefit-highlight">Effortless daily utility</div>
           </div>
 
           <!-- Benefit 2 -->
           <div class="benefit-card reveal-on-scroll">
-            <div class="benefit-number">02</div>
-            <div class="benefit-content">
-              <h3 class="benefit-title">Science-Backed Flow Architecture</h3>
-              <p class="benefit-desc">
-                Grounded in cognitive psychology and Pomodoro methodologies. Structured focus intervals shield your brain from disruptive context switching.
-              </p>
-              <div class="benefit-metric-chip">
-                <span class="metric-val">3.5 hrs</span>
-                <span class="metric-text">Uninterrupted deep focus unlocked each day</span>
-              </div>
+            <div class="benefit-icon-wrapper">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
             </div>
+            <h3 class="benefit-title">Timeless, Versatile Style</h3>
+            <p class="benefit-desc">Neutral earth tones, tactile textures, and quiet silhouettes that effortlessly transcend seasonal fashion cycles.</p>
+            <div class="benefit-highlight">Heirloom aesthetic</div>
           </div>
 
           <!-- Benefit 3 -->
           <div class="benefit-card reveal-on-scroll">
-            <div class="benefit-number">03</div>
-            <div class="benefit-content">
-              <h3 class="benefit-title">Lightning Speed &amp; Keyboard Power</h3>
-              <p class="benefit-desc">
-                Sub-50 millisecond interaction latency. Navigate your entire workspace, jump between tasks, and log updates entirely from your keyboard without touching a mouse.
-              </p>
-              <div class="benefit-metric-chip">
-                <span class="metric-val">&lt;50ms</span>
-                <span class="metric-text">Blazing quick UI response times</span>
-              </div>
+            <div class="benefit-icon-wrapper">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/>
+                <path d="M3 3v5h5"/>
+                <path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/>
+                <path d="M16 21h5v-5"/>
+              </svg>
             </div>
+            <h3 class="benefit-title">Reusable Alternatives</h3>
+            <p class="benefit-desc">Functional everyday objects that naturally eliminate hundreds of single-use disposables without requiring sacrifice.</p>
+            <div class="benefit-highlight">Zero compromise reusability</div>
           </div>
 
           <!-- Benefit 4 -->
           <div class="benefit-card reveal-on-scroll">
-            <div class="benefit-number">04</div>
-            <div class="benefit-content">
-              <h3 class="benefit-title">Private &amp; Offline-First Resilience</h3>
-              <p class="benefit-desc">
-                Never lose your work when the internet drops. NOVA synchronizes seamlessly in the background and encrypts all personal tasks end-to-end.
-              </p>
-              <div class="benefit-metric-chip">
-                <span class="metric-val">100%</span>
-                <span class="metric-text">Client-side encryption &amp; offline ready</span>
-              </div>
+            <div class="benefit-icon-wrapper">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+                <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+              </svg>
             </div>
-          </div>
-        </div>
-
-        <!-- Quick Interactive Benefit Highlights Banner -->
-        <div class="benefits-summary-banner reveal-on-scroll">
-          <div class="summary-col">
-            <span class="summary-number">14k+</span>
-            <span class="summary-label">Active Global Users</span>
-          </div>
-          <div class="summary-divider"></div>
-          <div class="summary-col">
-            <span class="summary-number">2.8M+</span>
-            <span class="summary-label">Tasks Completed</span>
-          </div>
-          <div class="summary-divider"></div>
-          <div class="summary-col">
-            <span class="summary-number">99.98%</span>
-            <span class="summary-label">Platform Uptime</span>
-          </div>
-          <div class="summary-divider"></div>
-          <div class="summary-col">
-            <span class="summary-number">4.9 / 5</span>
-            <span class="summary-label">User Satisfaction</span>
+            <h3 class="benefit-title">Thoughtful Material Choices</h3>
+            <p class="benefit-desc">Pure plant-derived finishes, non-toxic food-safe glazes, unbleached linen, and recyclable components that age gracefully.</p>
+            <div class="benefit-highlight">Natural tactile finishes</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- E. How It Works Section -->
-    <section class="section how-it-works-section" id="how-it-works" aria-labelledby="howItWorksHeading">
+    <!-- H. Sustainability and Impact Section -->
+    <section class="impact-section" id="impact" aria-label="Sustainability & Mindful Living">
       <div class="container">
-        <div class="section-header reveal-on-scroll">
-          <span class="section-badge">Simple 3-Step Workflow</span>
-          <h2 class="section-title" id="howItWorksHeading">From Chaos to Clarity in Three Easy Steps</h2>
-          <p class="section-subtitle">
-            Get up and running in under two minutes. No complicated onboarding seminars or steep learning curves required.
-          </p>
-        </div>
+        <div class="impact-card-wrapper reveal-on-scroll">
+          <div class="impact-header text-center">
+            <div class="section-eyebrow text-champagne">CONSCIOUS CONSUMPTION</div>
+            <h2 class="section-title text-ivory">Small rituals. <span class="serif-italic">More mindful living.</span></h2>
+            <p class="impact-subtitle text-sage">
+              Choosing reusable everyday products and keeping useful objects longer supports conscious consumption without fabricated claims or hollow buzzwords.
+            </p>
+          </div>
 
-        <div class="steps-wrapper">
-          <div class="steps-progress-line" aria-hidden="true"></div>
-
-          <!-- Step 1 -->
-          <div class="step-card reveal-on-scroll" id="step1">
-            <div class="step-badge-circle">01</div>
-            <div class="step-body">
-              <span class="step-meta">Setup in 60s</span>
-              <h3 class="step-title">Connect &amp; Organize</h3>
-              <p class="step-desc">
-                Import your existing to-do lists or start clean. Group your projects by domain (Engineering, Design, Personal, Growth) and set your target priorities.
+          <!-- 3 Pillars of Stewardship -->
+          <div class="impact-pillars-grid">
+            <div class="impact-pillar-box">
+              <div class="pillar-symbol">I</div>
+              <h3 class="pillar-box-title">Buy Less, Choose Better</h3>
+              <p class="pillar-box-desc">
+                When you invest in a tote sewn from heavy organic canvas or a bottle of pure borosilicate, you break the cycle of cheap, disposable replacements.
               </p>
-              <div class="step-visual-preview">
-                <span class="preview-tag">✓ Workspace Created</span>
-                <span class="preview-tag">✓ Calendars Synced</span>
-              </div>
+            </div>
+
+            <div class="impact-pillar-box">
+              <div class="pillar-symbol">II</div>
+              <h3 class="pillar-box-title">Care, Repair & Retain</h3>
+              <p class="pillar-box-desc">
+                Every object comes with simple care rituals: conditioning natural straps, gentle hand-washing, and seasonal refreshment to extend useful life.
+              </p>
+            </div>
+
+            <div class="impact-pillar-box">
+              <div class="pillar-symbol">III</div>
+              <h3 class="pillar-box-title">Everyday Micro-Shifts</h3>
+              <p class="pillar-box-desc">
+                Carrying your own hydration vessel and produce sack is a quiet personal vote for cleaner oceans, calmer minds, and less clutter at home.
+              </p>
             </div>
           </div>
 
-          <!-- Step 2 -->
-          <div class="step-card reveal-on-scroll" id="step2">
-            <div class="step-badge-circle">02</div>
-            <div class="step-body">
-              <span class="step-meta">Daily Routine</span>
-              <h3 class="step-title">Prioritize &amp; Focus</h3>
-              <p class="step-desc">
-                Launch your daily focus sprint. NOVA’s adaptive timer groups related tasks together, silencing notification noise while keeping your goals front and center.
-              </p>
-              <div class="step-visual-preview">
-                <span class="preview-tag">⚡ 25m Focus Block</span>
-                <span class="preview-tag">🛡️ Distraction Shield</span>
+          <!-- Interactive Mindful Habit Shift Calculator (Demo) -->
+          <div class="impact-interactive-box" id="impactCalculator">
+            <div class="calculator-header">
+              <span class="calc-tag">INTERACTIVE DEMONSTRATION</span>
+              <h3 class="calc-title">The Power of One Reusable Habit</h3>
+              <p class="calc-desc">Explore how simple daily swaps eliminate single-use waste over a year.</p>
+            </div>
+
+            <div class="calculator-controls">
+              <div class="control-group">
+                <label for="habitSelect" class="control-label">Select Your Daily Routine Habit:</label>
+                <select id="habitSelect" class="form-select">
+                  <option value="bottle">Reusable Water Vessel (vs. disposable plastic bottles)</option>
+                  <option value="tote">Organic Canvas Tote (vs. disposable retail bags)</option>
+                  <option value="travel">Bamboo Cutlery & Pouch (vs. takeout plastic utensils)</option>
+                </select>
+              </div>
+
+              <div class="control-group">
+                <label for="habitFrequency" class="control-label">Your Estimated Weekly Use: <strong id="freqLabel">5 days/week</strong></label>
+                <input type="range" id="habitFrequency" min="1" max="7" value="5" class="range-slider">
               </div>
             </div>
-          </div>
 
-          <!-- Step 3 -->
-          <div class="step-card reveal-on-scroll" id="step3">
-            <div class="step-badge-circle">03</div>
-            <div class="step-body">
-              <span class="step-meta">Continuous Growth</span>
-              <h3 class="step-title">Track &amp; Elevate</h3>
-              <p class="step-desc">
-                Review your weekly focus score and velocity heatmaps. Spot where time went, celebrate streak achievements, and optimize your routine continuously.
-              </p>
-              <div class="step-visual-preview">
-                <span class="preview-tag">📈 +35% Weekly Output</span>
-                <span class="preview-tag">🏆 12-Day Streak</span>
-              </div>
+            <div class="calculator-result-card">
+              <div class="result-number" id="annualAvoidedCount">~260</div>
+              <div class="result-label" id="annualAvoidedText">Single-use plastic bottles avoided in 1 year of daily mindful practice</div>
+              <p class="result-note">✦ Educational demonstration calculation based on standard daily single-use habits.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- F. Testimonials Section -->
-    <section class="section testimonials-section" id="testimonials" aria-labelledby="testimonialsHeading">
+    <!-- I. Customer Testimonials -->
+    <section class="testimonials-section" id="testimonials" aria-label="Customer Testimonials">
       <div class="container">
-        <div class="section-header reveal-on-scroll">
-          <span class="section-badge">Trusted by Top Teams</span>
-          <h2 class="section-title" id="testimonialsHeading">Loved by Productive Minds Everywhere</h2>
+        <div class="section-header text-center reveal-on-scroll">
+          <div class="demo-badge">SAMPLE TESTIMONIALS • DEMO SHOWCASE</div>
+          <h2 class="section-title">Quiet praise from <span class="serif-italic">mindful homes.</span></h2>
           <p class="section-subtitle">
-            See how founders, engineers, and creative leads rely on NOVA to maintain momentum and achieve more every day.
+            Authentic design reflections from individuals who value thoughtful craft and daily rituals.
           </p>
-          <div class="fictional-disclaimer">
-            <span class="disclaimer-icon">ℹ️</span>
-            <span>Illustrative sample reviews created for product demonstration.</span>
-          </div>
         </div>
 
         <div class="testimonials-grid">
           <!-- Testimonial 1 -->
-          <article class="testimonial-card reveal-on-scroll" id="testimonial1">
-            <div class="testimonial-rating" aria-label="5 stars rating">
-              <img src="assets/icons/star.svg" alt="" class="star-svg" aria-hidden="true">
-              <img src="assets/icons/star.svg" alt="" class="star-svg" aria-hidden="true">
-              <img src="assets/icons/star.svg" alt="" class="star-svg" aria-hidden="true">
-              <img src="assets/icons/star.svg" alt="" class="star-svg" aria-hidden="true">
-              <img src="assets/icons/star.svg" alt="" class="star-svg" aria-hidden="true">
+          <div class="testimonial-card reveal-on-scroll">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              <span class="star-filled">★</span>
+              <span class="star-filled">★</span>
+              <span class="star-filled">★</span>
+              <span class="star-filled">★</span>
+              <span class="star-filled">★</span>
             </div>
             <blockquote class="testimonial-quote">
-              “NOVA completely revolutionized how our engineering team coordinates sprints. The distraction-free focus mode and intelligent subtasks helped us cut context switching in half.”
+              “The craftsmanship of the Everyday Tote is remarkable. The heavyweight canvas has softened with use yet holds its architectural structure beautifully. It is rare to find sustainable goods that feel this genuinely luxurious.”
             </blockquote>
-            <div class="testimonial-author">
-              <img src="assets/images/avatar-1.jpg" alt="Sarah Chen profile photo" class="author-avatar" width="48" height="48" loading="lazy">
-              <div class="author-info">
-                <span class="author-name">Sarah Chen</span>
-                <span class="author-role">Staff Software Engineer, CloudScale</span>
+            <div class="testimonial-author-row">
+              <img src="assets/images/avatar-1.jpg" alt="Ananya Sharma portrait" class="author-avatar" width="48" height="48" loading="lazy">
+              <div class="author-meta">
+                <h3 class="author-name">Ananya Sharma</h3>
+                <p class="author-title">Architect & Design Director, Mumbai</p>
+                <span class="verified-tag">✓ Sample Demo Reviewer</span>
               </div>
             </div>
-          </article>
+          </div>
 
           <!-- Testimonial 2 -->
-          <article class="testimonial-card reveal-on-scroll" id="testimonial2">
-            <div class="testimonial-rating" aria-label="5 stars rating">
-              <img src="assets/icons/star.svg" alt="" class="star-svg" aria-hidden="true">
-              <img src="assets/icons/star.svg" alt="" class="star-svg" aria-hidden="true">
-              <img src="assets/icons/star.svg" alt="" class="star-svg" aria-hidden="true">
-              <img src="assets/icons/star.svg" alt="" class="star-svg" aria-hidden="true">
-              <img src="assets/icons/star.svg" alt="" class="star-svg" aria-hidden="true">
+          <div class="testimonial-card reveal-on-scroll">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              <span class="star-filled">★</span>
+              <span class="star-filled">★</span>
+              <span class="star-filled">★</span>
+              <span class="star-filled">★</span>
+              <span class="star-filled">★</span>
             </div>
             <blockquote class="testimonial-quote">
-              “The interface ergonomics are state-of-the-art. As a product designer, I’m extremely demanding with my tools. NOVA is the first productivity system that feels truly elegant, responsive, and distraction-free.”
+              “The Terra incense bowl has become the focal point of my morning coffee ritual. The speckled ceramic texture has an understated warmth that mass-manufactured homeware simply cannot replicate.”
             </blockquote>
-            <div class="testimonial-author">
-              <img src="assets/images/avatar-2.jpg" alt="Alex Rivera profile photo" class="author-avatar" width="48" height="48" loading="lazy">
-              <div class="author-info">
-                <span class="author-name">Alex Rivera</span>
-                <span class="author-role">Product Design Lead, Studio Forma</span>
+            <div class="testimonial-author-row">
+              <img src="assets/images/avatar-2.jpg" alt="Kabir Mehta portrait" class="author-avatar" width="48" height="48" loading="lazy">
+              <div class="author-meta">
+                <h3 class="author-name">Kabir Mehta</h3>
+                <p class="author-title">Interior Stylist, Bengaluru</p>
+                <span class="verified-tag">✓ Sample Demo Reviewer</span>
               </div>
             </div>
-          </article>
+          </div>
 
           <!-- Testimonial 3 -->
-          <article class="testimonial-card reveal-on-scroll" id="testimonial3">
-            <div class="testimonial-rating" aria-label="5 stars rating">
-              <img src="assets/icons/star.svg" alt="" class="star-svg" aria-hidden="true">
-              <img src="assets/icons/star.svg" alt="" class="star-svg" aria-hidden="true">
-              <img src="assets/icons/star.svg" alt="" class="star-svg" aria-hidden="true">
-              <img src="assets/icons/star.svg" alt="" class="star-svg" aria-hidden="true">
-              <img src="assets/icons/star.svg" alt="" class="star-svg" aria-hidden="true">
+          <div class="testimonial-card reveal-on-scroll">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              <span class="star-filled">★</span>
+              <span class="star-filled">★</span>
+              <span class="star-filled">★</span>
+              <span class="star-filled">★</span>
+              <span class="star-filled">★</span>
             </div>
             <blockquote class="testimonial-quote">
-              “From tracking quarterly OKRs down to 25-minute Pomodoro sprints, NOVA is our single source of truth. It replaced three separate subscriptions and saved our team hours every single week.”
+              “I carry the Ritual Travel Kit on every trip. The linen pouch is compact, tactile, and washes effortlessly. It makes zero-waste travel feel like an indulgence rather than a compromise.”
             </blockquote>
-            <div class="testimonial-author">
-              <img src="assets/images/avatar-3.jpg" alt="Priya Patel profile photo" class="author-avatar" width="48" height="48" loading="lazy">
-              <div class="author-info">
-                <span class="author-name">Priya Patel</span>
-                <span class="author-role">Founder &amp; CEO, Horizon Tech</span>
+            <div class="testimonial-author-row">
+              <img src="assets/images/avatar-3.jpg" alt="Elena Rostova portrait" class="author-avatar" width="48" height="48" loading="lazy">
+              <div class="author-meta">
+                <h3 class="author-name">Elena Rostova</h3>
+                <p class="author-title">Sustainability Educator, New Delhi</p>
+                <span class="verified-tag">✓ Sample Demo Reviewer</span>
               </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- G. CTA Banner Section -->
-    <section class="cta-banner-section" id="cta" aria-labelledby="ctaHeading">
-      <div class="container">
-        <div class="cta-banner-card reveal-on-scroll">
-          <div class="cta-glow-element" aria-hidden="true"></div>
-          <div class="cta-content">
-            <span class="cta-badge">⚡ Start Transforming Your Workday</span>
-            <h2 class="cta-title" id="ctaHeading">Ready to Experience Peak Flow State?</h2>
-            <p class="cta-description">
-              Join over 14,000+ ambitious individuals and teams who organize their day, finish high-impact tasks, and avoid burnout with NOVA.
-            </p>
-            <div class="cta-buttons">
-              <button type="button" class="btn btn-primary btn-lg" id="ctaStartBtn">
-                <span>Start Your Free 14-Day Trial</span>
-                <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-              </button>
-              <a href="#contact" class="btn btn-secondary btn-lg" id="ctaDemoBtn">Schedule Demo</a>
-            </div>
-            <div class="cta-guarantees">
-              <span>✓ 14-day free trial</span>
-              <span>✓ No credit card required</span>
-              <span>✓ Instant workspace setup</span>
-              <span>✓ Cancel anytime</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact & Demo Request Section -->
-    <section class="section contact-section" id="contact" aria-labelledby="contactHeading">
+    <!-- J. Journal or Inspiration Section -->
+    <section class="journal-section" id="journal" aria-label="Editorial Journal & Inspiration">
       <div class="container">
-        <div class="section-header reveal-on-scroll">
-          <span class="section-badge">Get in Touch</span>
-          <h2 class="section-title" id="contactHeading">Connect with the NOVA Team</h2>
+        <div class="section-header text-center reveal-on-scroll">
+          <div class="section-eyebrow">STORIES & PERSPECTIVES</div>
+          <h2 class="section-title">The Mindful <span class="serif-italic">Journal.</span></h2>
           <p class="section-subtitle">
-            Have questions about team plans, custom enterprise workflows, or product features? Send us a message and our team will get back to you promptly.
+            Reflections, quiet guides, and slow perspectives on conscious daily living.
           </p>
         </div>
 
-        <div class="contact-grid">
-          <!-- Contact Info Card -->
-          <div class="contact-info-card reveal-on-scroll">
-            <h3 class="contact-info-title">Let’s Start a Conversation</h3>
-            <p class="contact-info-desc">
-              Whether you are an individual wanting to master personal focus or an enterprise scaling deep work across engineering teams, we’re here to help.
-            </p>
-
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                    <polyline points="22,6 12,13 2,6"></polyline>
-                  </svg>
-                </div>
-                <div class="info-details">
-                  <span class="info-label">Direct Support Email</span>
-                  <a href="mailto:support@nova-hub.demo" class="info-link">support@nova-hub.demo</a>
-                </div>
-              </div>
-
-              <div class="info-item">
-                <div class="info-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                    <circle cx="12" cy="10" r="3"></circle>
-                  </svg>
-                </div>
-                <div class="info-details">
-                  <span class="info-label">Headquarters</span>
-                  <span class="info-text">Bengaluru, Karnataka &amp; San Francisco, CA</span>
-                </div>
-              </div>
-
-              <div class="info-item">
-                <div class="info-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <polyline points="12 6 12 12 16 14"></polyline>
-                  </svg>
-                </div>
-                <div class="info-details">
-                  <span class="info-label">Response Time</span>
-                  <span class="info-text">Under 2 hours during active business hours</span>
-                </div>
-              </div>
+        <div class="journal-grid">
+          <!-- Story 1 -->
+          <article class="journal-card reveal-on-scroll" data-story="morning">
+            <div class="journal-media">
+              <img 
+                src="assets/images/journal-morning.jpg" 
+                alt="Slow morning ritual with coffee press, warm mug, and dried botanicals on wooden table" 
+                class="journal-img" 
+                width="380" 
+                height="280" 
+                loading="lazy"
+              >
+              <span class="journal-category">Rituals</span>
             </div>
-
-            <!-- Internship Task Meta Note -->
-            <div class="internship-meta-box">
-              <span class="meta-box-tag">🎓 Internship Project</span>
-              <p class="meta-box-text">
-                Developed as <strong>Task 3: Product Landing Page</strong> for the <strong>Cognetix Technology Full Stack Developer Internship</strong> by <strong>Tejaswini Rakhunde</strong>.
+            <div class="journal-content">
+              <span class="journal-time">4 MIN READ • ATELIER ESSAY</span>
+              <h3 class="journal-title">A Simpler, More Thoughtful Morning</h3>
+              <p class="journal-excerpt">
+                How carving out fifteen intentional minutes with warm tea, natural light, and quiet breathing grounds your entire day.
               </p>
-            </div>
-          </div>
-
-          <!-- Interactive Contact Form -->
-          <div class="contact-form-card reveal-on-scroll">
-            <form id="contactForm" class="contact-form" novalidate>
-              <div class="form-group">
-                <label for="contactName" class="form-label">Full Name <span class="required">*</span></label>
-                <input type="text" id="contactName" class="form-input" placeholder="e.g. Tejaswini Rakhunde" required>
-                <span class="field-error" id="nameError" aria-live="polite"></span>
-              </div>
-
-              <div class="form-group">
-                <label for="contactEmail" class="form-label">Work Email <span class="required">*</span></label>
-                <input type="email" id="contactEmail" class="form-input" placeholder="e.g. tejaswini@company.com" required>
-                <span class="field-error" id="emailError" aria-live="polite"></span>
-              </div>
-
-              <div class="form-group">
-                <label for="contactTopic" class="form-label">Interest Topic</label>
-                <select id="contactTopic" class="form-select">
-                  <option value="demo">Request Live Product Demo</option>
-                  <option value="team">Team &amp; Enterprise Plan</option>
-                  <option value="feedback">General Inquiry &amp; Feedback</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label for="contactMessage" class="form-label">Message <span class="required">*</span></label>
-                <textarea id="contactMessage" class="form-textarea" rows="4" placeholder="How can we help you boost your productivity?" required></textarea>
-                <span class="field-error" id="messageError" aria-live="polite"></span>
-              </div>
-
-              <button type="submit" class="btn btn-primary btn-block" id="contactSubmitBtn">
-                <span>Send Message</span>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <line x1="22" y1="2" x2="11" y2="13"></line>
-                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                </svg>
+              <button type="button" class="btn-read-story" data-story="morning" aria-label="Read A Simpler, More Thoughtful Morning">
+                <span>Read Story</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
               </button>
-            </form>
+            </div>
+          </article>
+
+          <!-- Story 2 -->
+          <article class="journal-card reveal-on-scroll" data-story="routine">
+            <div class="journal-media">
+              <img 
+                src="assets/images/journal-routine.jpg" 
+                alt="Kitchen counter with pantry glass jars, unbleached produce sack, and fresh rosemary" 
+                class="journal-img" 
+                width="380" 
+                height="280" 
+                loading="lazy"
+              >
+              <span class="journal-category">Habits</span>
+            </div>
+            <div class="journal-content">
+              <span class="journal-time">6 MIN READ • PRACTICAL GUIDE</span>
+              <h3 class="journal-title">Making Reusability Part of Your Routine</h3>
+              <p class="journal-excerpt">
+                Practical, unhurried steps to replace single-use habits in your kitchen, pantry, and daily commute without friction.
+              </p>
+              <button type="button" class="btn-read-story" data-story="routine" aria-label="Read Making Reusability Part of Your Routine">
+                <span>Read Story</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Story 3 -->
+          <article class="journal-card reveal-on-scroll" data-story="guide">
+            <div class="journal-media">
+              <img 
+                src="assets/images/journal-guide.jpg" 
+                alt="Minimalist living room with natural linen curtains, oak credenza, and soft daylight" 
+                class="journal-img" 
+                width="380" 
+                height="280" 
+                loading="lazy"
+              >
+              <span class="journal-category">Philosophy</span>
+            </div>
+            <div class="journal-content">
+              <span class="journal-time">5 MIN READ • CURATION</span>
+              <h3 class="journal-title">A Guide to Buying Less, Choosing Better</h3>
+              <p class="journal-excerpt">
+                Why embracing fewer, heirloom-grade belongings creates mental clarity, enduring aesthetic joy, and lighter consumption.
+              </p>
+              <button type="button" class="btn-read-story" data-story="guide" aria-label="Read A Guide to Buying Less, Choosing Better">
+                <span>Read Story</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- K. Final CTA Banner -->
+    <section class="final-cta-section" id="cta" aria-label="Explore Collection Banner">
+      <div class="container">
+        <div class="cta-banner-box reveal-on-scroll">
+          <div class="cta-glow" aria-hidden="true"></div>
+          <div class="cta-content text-center">
+            <span class="cta-eyebrow">WELCOME TO CONSCIOUS LUXURY</span>
+            <h2 class="cta-title">
+              Make room for a more <br><span class="serif-italic">mindful everyday.</span>
+            </h2>
+            <p class="cta-subtitle">
+              Discover thoughtfully designed essentials for living with intention, purpose, and enduring elegance.
+            </p>
+            <div class="cta-buttons">
+              <a href="#collection" class="btn btn-champagne btn-lg" id="finalCtaExploreBtn">
+                <span>Explore the Collection</span>
+                <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <a href="#journal" class="btn btn-outline-light btn-lg" id="finalCtaJournalBtn">
+                <span>Read the Journal</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- H. Footer -->
-  <footer class="site-footer" id="footer">
+  <!-- L. Footer -->
+  <footer class="site-footer" id="footer" aria-label="Site Footer">
     <div class="container footer-container">
-      <div class="footer-top">
-        <div class="footer-brand-col">
-          <a href="#hero" class="brand-logo footer-logo" aria-label="NOVA Homepage">
-            <img src="assets/icons/logo.svg" alt="NOVA Logo" class="brand-icon" width="32" height="32">
-            <span class="brand-name">NOVA</span>
-          </a>
-          <p class="footer-tagline">
-            The next-generation smart productivity hub engineered for focus, clarity, and high-velocity daily execution.
-          </p>
-          <div class="social-links" aria-label="Social media channels">
-            <a href="https://github.com/Tejaswini-2006" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-              </svg>
-            </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-              </svg>
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="X Twitter Profile">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-              </svg>
-            </a>
+      <!-- Brand & Mission Column -->
+      <div class="footer-col footer-col-brand">
+        <a href="#hero" class="brand-logo footer-logo" aria-label="ECOVIBE Homepage">
+          <img src="assets/icons/logo.svg" alt="ECOVIBE" class="brand-icon" width="32" height="32">
+          <div class="brand-text-group">
+            <span class="brand-name">ECOVIBE</span>
+            <span class="brand-tagline">CONSCIOUS LUXURY</span>
           </div>
-        </div>
-
-        <div class="footer-links-col">
-          <h4 class="footer-col-title">Navigation</h4>
-          <ul class="footer-nav-list">
-            <li><a href="#hero" class="footer-link">Home</a></li>
-            <li><a href="#features" class="footer-link">Features</a></li>
-            <li><a href="#benefits" class="footer-link">Benefits</a></li>
-            <li><a href="#how-it-works" class="footer-link">How It Works</a></li>
-            <li><a href="#testimonials" class="footer-link">Testimonials</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-links-col">
-          <h4 class="footer-col-title">Product</h4>
-          <ul class="footer-nav-list">
-            <li><a href="#features" class="footer-link">Smart Task System</a></li>
-            <li><a href="#hero" class="footer-link">Pomodoro Engine</a></li>
-            <li><a href="#benefits" class="footer-link">Focus Analytics</a></li>
-            <li><a href="#cta" class="footer-link">Pricing &amp; Trials</a></li>
-            <li><a href="#contact" class="footer-link">Enterprise Inquiry</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-links-col">
-          <h4 class="footer-col-title">Internship</h4>
-          <ul class="footer-nav-list">
-            <li><span class="footer-info-text">Cognetix Technology</span></li>
-            <li><span class="footer-info-text">Full Stack Web Dev</span></li>
-            <li><span class="footer-info-text">Task 3: Landing Page</span></li>
-            <li><a href="https://github.com/Tejaswini-2006/Cognetix_ProductLandingPage" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub Repository</a></li>
-          </ul>
+        </a>
+        <p class="footer-tagline">
+          Conscious Living. Timeless Luxury. Thoughtfully imagined essentials designed for a slower ritual and a lighter footprint.
+        </p>
+        <div class="footer-disclaimer-badge">
+          ✦ Educational Demonstration Project for Cognetix Technology Internship — Task 3
         </div>
       </div>
 
-      <div class="footer-bottom">
-        <p class="copyright-text">
-          &copy; <span id="currentYear">2026</span> <strong>NOVA Technologies</strong>. Created for <strong>Cognetix Technology Internship</strong> by <a href="https://github.com/Tejaswini-2006" target="_blank" rel="noopener noreferrer" class="author-credit-link">Tejaswini Rakhunde</a>. All rights reserved.
+      <!-- Quick Navigation Links -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#collection">Curated Collection</a></li>
+          <li><a href="#philosophy">Our Philosophy</a></li>
+          <li><a href="#benefits">The Difference</a></li>
+          <li><a href="#impact">Circular Impact</a></li>
+          <li><a href="#journal">The Journal</a></li>
+        </ul>
+      </div>
+
+      <!-- Customer Care & Ritual Guides -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Care & Rituals</h4>
+        <ul class="footer-links">
+          <li><a href="#philosophy" class="demo-link" data-info="care">Material Care Guide</a></li>
+          <li><a href="#collection" class="demo-link" data-info="circular">Circular Lifecycle</a></li>
+          <li><a href="#collection" class="demo-link" data-info="shipping">Shipping & Packaging</a></li>
+          <li><a href="#testimonials" class="demo-link" data-info="faq">Frequently Asked Questions</a></li>
+        </ul>
+      </div>
+
+      <!-- Mindful Newsletter Column -->
+      <div class="footer-col footer-col-newsletter">
+        <h4 class="footer-heading">The Mindful Dispatch</h4>
+        <p class="newsletter-desc">
+          Receive slow essays, product release notes, and quiet seasonal guides directly to your inbox.
         </p>
-        <button type="button" class="btn-back-to-top" id="backToTopBtn" aria-label="Scroll back to top">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <polyline points="18 15 12 9 6 15"></polyline>
-          </svg>
-          <span>Top</span>
-        </button>
+        <form class="newsletter-form" id="newsletterForm" novalidate>
+          <div class="input-group">
+            <input 
+              type="email" 
+              class="form-input" 
+              id="newsletterEmail" 
+              placeholder="Your email address" 
+              aria-label="Email address for newsletter" 
+              required
+            >
+            <button type="submit" class="btn btn-primary btn-newsletter" id="newsletterSubmitBtn" aria-label="Subscribe to newsletter">
+              <span>Join</span>
+            </button>
+          </div>
+          <span class="form-feedback" id="newsletterFeedback" aria-live="polite"></span>
+        </form>
+      </div>
+    </div>
+
+    <!-- Bottom Copyright & Attribution Bar -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p class="copyright-text">
+          &copy; <span id="currentYear">2026</span> ECOVIBE. All rights reserved. Fictional demonstration brand.
+        </p>
+        <p class="internship-credit">
+          Cognetix Technology Internship • Task 3 Product Landing Page • Developed by <strong>Tejaswini Rakhunde</strong>
+        </p>
       </div>
     </div>
   </footer>
 
-  <!-- Interactive Get Started / Demo Modal Dialog -->
-  <div class="modal-backdrop" id="demoModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-    <div class="modal-card">
-      <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Close dialog">✕</button>
+  <!-- BACK TO TOP BUTTON -->
+  <button type="button" class="back-to-top" id="backToTopBtn" aria-label="Back to top of page">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
 
-      <!-- Step 1: Input Form -->
-      <div class="modal-body-form" id="modalFormStep">
-        <div class="modal-header">
-          <div class="modal-icon-badge">🚀</div>
-          <h3 class="modal-title" id="modalTitle">Start Your NOVA Workspace</h3>
-          <p class="modal-subtitle">Experience peak productivity. Set up your 14-day free trial in seconds.</p>
-        </div>
+  <!-- ========================================================================
+       MODALS & SLIDE-OVER DRAWERS
+       ======================================================================== -->
 
-        <form id="signupDemoForm" class="modal-form" novalidate>
-          <div class="form-group">
-            <label for="modalFullName" class="form-label">Full Name</label>
-            <input type="text" id="modalFullName" class="form-input" placeholder="e.g. Tejaswini Rakhunde" required>
-            <span class="field-error" id="modalNameError"></span>
-          </div>
-
-          <div class="form-group">
-            <label for="modalEmail" class="form-label">Email Address</label>
-            <input type="email" id="modalEmail" class="form-input" placeholder="e.g. you@example.com" required>
-            <span class="field-error" id="modalEmailError"></span>
-          </div>
-
-          <div class="form-group">
-            <label for="modalGoal" class="form-label">Primary Productivity Goal</label>
-            <select id="modalGoal" class="form-select">
-              <option value="deepwork">Personal Deep Work &amp; Focus</option>
-              <option value="team">Engineering &amp; Sprint Management</option>
-              <option value="creator">Creative Workflow &amp; Delivery</option>
-              <option value="study">Academic Study &amp; Projects</option>
-            </select>
-          </div>
-
-          <button type="submit" class="btn btn-primary btn-block" id="modalSubmitBtn">
-            <span>Create Workspace</span>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-              <polyline points="12 5 19 12 12 19"></polyline>
-            </svg>
-          </button>
-        </form>
+  <!-- 1. Interactive Shopping Bag Drawer -->
+  <div class="bag-drawer-overlay" id="bagDrawerOverlay" aria-hidden="true"></div>
+  <aside class="bag-drawer" id="bagDrawer" aria-label="Shopping Bag Drawer" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="bag-drawer-header">
+      <div class="bag-drawer-title-group">
+        <h3 class="bag-drawer-title">Your Mindful Bag</h3>
+        <span class="bag-drawer-count" id="drawerItemCount">0 items</span>
       </div>
+      <button type="button" class="btn-close-drawer" id="closeBagDrawerBtn" aria-label="Close Shopping Bag Drawer">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
 
-      <!-- Step 2: Instant Success Confirmation -->
-      <div class="modal-body-success hidden" id="modalSuccessStep">
-        <div class="success-icon-wrap">
-          <svg class="success-check-svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5">
-            <polyline points="20 6 9 17 4 12"></polyline>
-          </svg>
-        </div>
-        <h3 class="modal-title">Welcome to NOVA!</h3>
-        <p class="modal-subtitle" id="modalSuccessMessage">
-          Your personalized productivity workspace is configured and ready to explore.
-        </p>
-
-        <div class="demo-key-box">
-          <div class="key-row">
-            <span class="key-lbl">Workspace:</span>
-            <span class="key-val" id="mockWorkspaceName">nova-demo-hub</span>
-          </div>
-          <div class="key-row">
-            <span class="key-lbl">Access Mode:</span>
-            <span class="key-val status-active">14-Day Pro Free Trial</span>
-          </div>
-        </div>
-
-        <button type="button" class="btn btn-primary btn-block" id="modalFinishBtn">
-          Launch Interactive Sandbox
-        </button>
+    <!-- Free Shipping Bar Demo -->
+    <div class="shipping-progress-banner">
+      <div class="shipping-text" id="shippingBannerText">Complimentary plastic-free shipping on orders over ₹4,000</div>
+      <div class="shipping-progress-track">
+        <div class="shipping-progress-fill" id="shippingProgressFill" style="width: 0%;"></div>
       </div>
+    </div>
+
+    <!-- Bag Items Container -->
+    <div class="bag-items-list" id="bagItemsList">
+      <!-- Rendered dynamically by JavaScript -->
+      <div class="bag-empty-state" id="bagEmptyState">
+        <div class="empty-icon-wrap">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#858D65" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        </div>
+        <p class="empty-title">Your bag is empty</p>
+        <p class="empty-desc">Discover our collection of considered essentials to begin your mindful ritual.</p>
+        <button type="button" class="btn btn-outline-dark btn-sm" id="emptyExploreBtn">Explore Collection</button>
+      </div>
+    </div>
+
+    <!-- Bag Drawer Footer -->
+    <div class="bag-drawer-footer" id="bagDrawerFooter">
+      <div class="bag-summary-row">
+        <span>Estimated Subtotal</span>
+        <span class="summary-amount" id="bagSubtotal">₹0</span>
+      </div>
+      <div class="bag-summary-row text-muted-sm">
+        <span>Sustainable Packaging</span>
+        <span class="text-champagne">Included</span>
+      </div>
+      <p class="demo-checkout-notice">
+        ✦ Fictional Demonstration Notice: Clicking checkout displays an interactive order confirmation demo. No payment is taken.
+      </p>
+      <button type="button" class="btn btn-primary btn-block btn-checkout" id="checkoutBtn">
+        <span>Proceed to Demonstration Checkout</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- 2. Product Detail Quick-View Modal -->
+  <div class="modal-backdrop" id="productModalBackdrop" aria-hidden="true"></div>
+  <div class="modal-dialog product-modal" id="productModal" role="dialog" aria-modal="true" aria-labelledby="modalProductTitle" aria-hidden="true">
+    <button type="button" class="btn-close-modal" id="closeProductModalBtn" aria-label="Close Product Details">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="product-modal-content" id="productModalBody">
+      <!-- Populated dynamically via JS -->
     </div>
   </div>
 
-  <!-- Interactive Toast Notification Container -->
+  <!-- 3. Journal Story Modal -->
+  <div class="modal-backdrop" id="journalModalBackdrop" aria-hidden="true"></div>
+  <div class="modal-dialog journal-modal" id="journalModal" role="dialog" aria-modal="true" aria-labelledby="modalJournalTitle" aria-hidden="true">
+    <button type="button" class="btn-close-modal" id="closeJournalModalBtn" aria-label="Close Story Dialog">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <article class="journal-modal-content" id="journalModalBody">
+      <!-- Populated dynamically via JS -->
+    </article>
+  </div>
+
+  <!-- 4. Global Toast Notification Container -->
   <div class="toast-container" id="toastContainer" aria-live="polite" aria-atomic="true"></div>
 
-  <!-- Main JavaScript File -->
-  <script src="script.js"></script>
+  <!-- JavaScript File -->
+  <script src="script.js" defer></script>
 </body>
 </html>

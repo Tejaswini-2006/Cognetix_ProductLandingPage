@@ -1,221 +1,186 @@
-# 🚀 NOVA — Smart Productivity Hub
+# 🌿 ECOVIBE — Premium Eco-Friendly Lifestyle Landing Page
 
-> **Task 3: Product Landing Page**  
-> Developed for the **Cognetix Technology Full Stack Developer Internship**  
+> **Cognetix Technology Internship — Task 3: Product Landing Page**  
+> **Brand Name:** ECOVIBE  
+> **Tagline:** Conscious Living. Timeless Luxury.  
 > **Author:** Tejaswini Rakhunde ([@Tejaswini-2006](https://github.com/Tejaswini-2006))  
-> **Repository:** [https://github.com/Tejaswini-2006/Cognetix_ProductLandingPage](https://github.com/Tejaswini-2006/Cognetix_ProductLandingPage)
+> **Repository:** [https://github.com/Tejaswini-2006/Cognetix_ProductLandingPage](https://github.com/Tejaswini-2006/Cognetix_ProductLandingPage)  
 
 ---
 
 ## 📌 Project Overview
 
-**NOVA** is a modern, high-conversion SaaS product landing page created for a fictional all-in-one productivity hub. Engineered around deep-work cognitive science, task orchestration, and team alignment, NOVA presents a visually stunning, responsive, and interactive digital experience.
+**ECOVIBE** is a modern, high-end editorial product landing page for a fictional sustainable lifestyle brand. Designed around the ethos of *Conscious Living. Timeless Luxury*, ECOVIBE curates artisanal essentials for a mindful home, a slower ritual, and a lighter footprint.
 
-The landing page showcases NOVA's core capabilities, highlights tangible benefits, walks through a 3-step workflow, establishes trust with sample testimonials, and provides dynamic call-to-action touchpoints.
+Built entirely with **semantic HTML5, modern CSS3 (Flexbox & CSS Grid), and Vanilla JavaScript (ES6+)**, with zero external frameworks, zero heavy libraries, and no paid services or backends.
 
-Built with **pure Vanilla HTML5, CSS3, and modern JavaScript (ES6+)** with zero external frameworks or heavy dependencies.
-
----
-
-## ✨ Key Features & Functionality
-
-### 1. Navigation Bar
-- **Brand Identity:** High-resolution SVG brand icon, bold typographic logotype, and version tag badge.
-- **Section Anchors:** Smooth-scrolling links to *Features*, *Benefits*, *How It Works*, *Testimonials*, and *Contact*.
-- **Scrollspy / Active State:** Dynamic navigation link highlighting powered by scroll position tracking.
-- **Mobile Responsive Drawer:** Accessible hamburger toggle menu (`aria-expanded`, keyboard ESC handling, auto-closing on outside click or anchor selection).
-- **Header Blur Effect:** Glassmorphic sticky header with backdrop blur and dynamic elevation on scroll.
-
-### 2. High-Impact Hero Section
-- **Compelling Copy:** Punchy headline with gradient text, concise product value proposition, and release badges.
-- **Dual Call-to-Action:** Primary gradient glow button ("Get Started Free") and secondary outline button ("See How It Works").
-- **Social Proof:** Multi-avatar group preview with 4.9/5 star ratings from over 14,000+ creators and engineers.
-- **Interactive Focus Widget:**
-  - **Live Pomodoro Focus Timer:** 25-minute countdown with Start / Pause / Reset controls and Web Audio API chime.
-  - **Interactive Task Checklist:** Checkboxes with strike-through animations and live progress counter (`X of 3 Done`).
-  - **Floating Metric Chips:** Dynamic flow quality score (94%) and daily focus streak counter (12 Days).
-- **Product Mockup:** High-resolution vector SaaS dashboard preview embedded within a browser device frame.
-
-### 3. Features Section & Interactive Filtering
-- 6 comprehensive feature cards equipped with custom SVGs, category tags, descriptions, and feature bullet lists:
-  1. **Smart Task Management:** AI priority scoring, auto-tagging, nested subtask trees.
-  2. **Productivity Analytics:** Real-time focus score metrics, burnout prediction, and exportable reports.
-  3. **Team Collaboration:** Shared project boards, role permissions, and threaded discussions.
-  4. **Progress Tracking:** Sprint burndown graphs, quarterly OKR alignment, and velocity forecasting.
-  5. **Smart Reminders:** Context-aware nudges, two-way Google/Outlook calendar sync, and snooze engine.
-  6. **Workflow Organization:** Seamless Kanban, list, table, and timeline views.
-- **Interactive Category Filter Tabs:** Filter cards instantly by *All*, *Organization*, *Analytics*, or *Collaboration*.
-
-### 4. Benefits Section
-- Detailed value propositions explaining why top performers choose NOVA:
-  - **Reclaim 8+ Hours Weekly:** +42% increase in completed weekly goals.
-  - **Science-Backed Flow Architecture:** 3.5 hours of uninterrupted deep focus unlocked daily.
-  - **Lightning Speed & Keyboard Power:** Sub-50ms interaction latency with full keyboard shortcuts.
-  - **Private & Offline-First:** 100% client-side encrypted and offline resilience.
-- **Key Metrics Highlight Banner:** Showcases 14k+ active users, 2.8M+ tasks completed, and 99.98% platform uptime.
-
-### 5. Simple 3-Step "How It Works" Workflow
-- Visual stepped roadmap with glowing connected progress line:
-  - **Step 01: Connect & Organize** — 60-second onboarding wizard and workspace initialization.
-  - **Step 02: Prioritize & Focus** — Adaptive scheduling engine and distraction shielding.
-  - **Step 03: Track & Elevate** — Weekly velocity heatmaps and streak compounding.
-
-### 6. Testimonials Section
-- 3 polished testimonial cards with verified roles, star ratings, and feedback quotes:
-  - **Sarah Chen** — Staff Software Engineer @ CloudScale
-  - **Alex Rivera** — Lead Product Designer @ Studio Forma
-  - **Priya Patel** — Founder & CEO @ Horizon Tech
-- Transparent disclaimer pill clearly noting sample demonstration testimonials.
-
-### 7. Call-to-Action Banner
-- Visually prominent gradient banner with deep violet radial glow.
-- "Start Your Free 14-Day Trial" CTA and "Schedule Demo" secondary action.
-- Trust badges: No credit card required, instant setup, cancel anytime.
-
-### 8. Contact & Demo Request
-- Direct support channels (support email, office headquarters, guaranteed 2-hour response window).
-- Interactive form with real-time validation for Full Name, Work Email, Topic, and Message.
-- Interactive loading spinner state and automated toast notification feedback.
-
-### 9. Interactive "Get Started" Modal Dialog
-- Accessible modal window (`role="dialog"`, backdrop blur, focus trapping, ESC key listener).
-- User inputs Full Name, Work Email, and selects a primary productivity goal.
-- Generates a personalized workspace domain (`[user-name]-workspace.nova-hub.com`) with a 14-Day Pro Free Trial badge.
-
-### 10. Footer
-- Brand info, quick navigation links, product resources, and internship attribution.
-- Social media icon links (GitHub, LinkedIn, Twitter/X).
-- **Dynamic Year Generation:** Automatically displays current year via JavaScript.
-- **Back to Top Button:** Smoothly scrolls back to hero section.
+The design draws inspiration from boutique sustainable fashion ateliers, high-end Kinfolk aesthetics, and refined organic lifestyle publications. It combines an earthy editorial color palette (deep forest green, warm ivory, soft sage, muted olive, and champagne gold) with responsive layouts, accessible modal dialogs, an interactive slide-over shopping bag drawer, and mindful micro-interactions.
 
 ---
 
-## 🛠️ Technologies Used
+## 🎯 Task 3 Objectives & Deliverables
 
-| Technology | Purpose |
+As part of the **Cognetix Technology Frontend / Web Development Internship (Task 3)**, this project fulfills all key criteria:
+1. **Semantic HTML5 Structure:** Clear landmarks (`<header>`, `<nav>`, `<main>`, `<section>`, `<aside>`, `<footer>`), valid heading hierarchy (`h1` through `h4`), and descriptive `alt` tags.
+2. **Pure Vanilla CSS3 Styling:** CSS Custom Properties (Design Tokens), responsive typography via `clamp()`, CSS Grid & Flexbox, subtle glassmorphic blurs, and graceful hover states.
+3. **Vanilla JavaScript Functionality:** Modular DOM manipulation, responsive mobile hamburger drawer, category filtering, accessible modals with keyboard `Escape` trap, interactive shopping bag drawer with live counter, and custom toast notifications.
+4. **Accessibility (WCAG Compliant):** Skip-to-content links, visible `:focus-visible` styling, ARIA roles (`role="dialog"`, `aria-modal="true"`, `aria-expanded`), and full `@media (prefers-reduced-motion)` support.
+5. **Zero Fabrication & Educational Transparency:** Clear labeling of all products, reviews, and metrics as fictional educational demonstration content.
+
+---
+
+## ✨ Comprehensive Section Walkthrough
+
+| Section | Key Elements & Features |
 |---|---|
-| **HTML5** | Semantic structure, accessible landmarks, form validation attributes, Open Graph meta tags |
-| **CSS3** | Custom design system tokens, CSS Grid & Flexbox, glassmorphism, responsive media queries |
-| **JavaScript (ES6+)** | DOM manipulation, mobile drawer, interactive timer, live checklist, filter tabs, modal dialog, toast alerts |
-| **Web Audio API** | Native synthesised completion chime for focus timer without external audio files |
-| **SVG** | Crisp vector icons and brand logos ensuring fast load times and infinite scalability |
-| **Google Fonts** | Plus Jakarta Sans for clean typography |
+| **A. Announcement Bar** | Slim top bar with champagne highlight: *“LESS WASTE. MORE WONDER. DISCOVER CONSCIOUS LUXURY.”* with direct link to the collection. |
+| **B. Header & Navigation** | Botanical logo mark, clean desktop links (*Home, Collection, Our Philosophy, Impact, Journal*), interactive shopping bag trigger with dynamic item counter badge, CTA button, and accessible mobile hamburger drawer with backdrop blur. |
+| **C. Hero Section** | Editorial headline (*“Live beautifully. Leave a lighter footprint.”*), dual CTAs, community social proof rating (4.95/5 stars), large lifestyle imagery, and floating glassmorphism badges (*100% Circular Intent* & *Artisanal Heirloom Quality*). |
+| **D. Brand Values Strip** | 4 core principles: *Thoughtful Materials*, *Designed to Last*, *Everyday Reusability*, and *Less, But Better* with custom SVG icons. |
+| **E. Featured Collection** | 4 core demonstration products (*The Everyday Tote*, *The Solstice Bottle*, *The Terra Home Set*, *The Ritual Travel Kit*) with sample INR prices, category filter tabs (*All, Bags & Carry, Drinkware, Home & Ritual*), Quick-View modals, and Add-to-Bag actions. |
+| **F. Brand Philosophy** | Split layout featuring atelier notes (*“Better choices begin with everyday rituals”*), 3 interactive philosophy pillars (*Honest Provenance*, *Slow Architecture*, *Closed-Loop Care*), and pull-quote card. |
+| **G. Benefits Section** | 4 value cards: *Designed for Everyday Use*, *Timeless, Versatile Style*, *Reusable Alternatives*, and *Thoughtful Material Choices*. |
+| **H. Impact & Sustainability** | Honest circular stewardship pillars (I. Buy Less, Choose Better, II. Care & Repair, III. Everyday Micro-Shifts) + Interactive Mindful Habit Shift Calculator calculating avoided single-use items. |
+| **I. Testimonials** | 3 sample demonstration reviews from verified demo personas (Architect, Interior Stylist, Sustainability Educator) clearly identified as demonstration content. |
+| **J. Journal & Stories** | 3 editorial article cards (*A Simpler, More Thoughtful Morning*, *Making Reusability Part of Your Routine*, *A Guide to Buying Less, Choosing Better*) with interactive full-screen reader modals. |
+| **K. Final CTA Banner** | Atmospheric deep forest green banner with radial champagne glow and dual direct action buttons. |
+| **L. Footer** | Wordmark, brand mission, quick navigation links, material care guide toasts, newsletter subscription form with live email validation, dynamic copyright year, and internship attribution. |
 
 ---
 
-## 📂 Project Structure
+## 🛍️ Interactive Frontend Features
+
+- **Slide-Over Shopping Bag Drawer:**
+  - Real-time item listing with thumbnail, title, and formatted price in Indian Rupees (INR `₹`).
+  - Quantity controls (`+`, `−`, and `Remove`).
+  - Free shipping progress bar (e.g. unlocks at ₹4,000 threshold).
+  - Subtotal calculator and demonstration checkout modal notice.
+- **Product Quick-View Modal:**
+  - Rich dialog displaying large photography, detailed material specifications, dimensions, and care rituals.
+- **Journal Story Reader:**
+  - Accessible modal dialog presenting complete essays with pull-quotes and slow living takeaways.
+- **Toast Notifications:**
+  - Non-intrusive bottom-left notification banners triggered on bag updates and newsletter signups.
+- **Back to Top Button:**
+  - Floats into view past 400px scroll depth for effortless navigation.
+
+---
+
+## 📁 Project Directory Structure
 
 ```text
 Cognetix_ProductLandingPage/
-│
-├── index.html                   # Semantic HTML5 landing page structure
-├── style.css                    # Design tokens, layouts, animations, and responsive styles
-├── script.js                    # Interactive logic, timer, modal, forms, and mobile navigation
-├── README.md                    # Project documentation, specifications, and testing log
-├── .gitignore                   # Version control ignore rules
-│
+├── index.html                # Semantic HTML5 master document
+├── style.css                 # Comprehensive Vanilla CSS3 design system
+├── script.js                 # Modular ES6+ Vanilla JavaScript logic
+├── README.md                 # Detailed documentation & setup guide
+├── .gitignore                # Git exclusions
 └── assets/
-    ├── images/
-    │   ├── dashboard-preview.jpg# High-resolution SaaS product interface graphic
-    │   ├── avatar-1.jpg         # Testimonial avatar (Sarah Chen)
-    │   ├── avatar-2.jpg         # Testimonial avatar (Alex Rivera)
-    │   └── avatar-3.jpg         # Testimonial avatar (Priya Patel)
-    │
-    └── icons/
-        ├── logo.svg             # NOVA brand logo icon
-        ├── task.svg             # Smart task management icon
-        ├── analytics.svg        # Productivity analytics icon
-        ├── team.svg             # Team collaboration icon
-        ├── tracking.svg         # Progress tracking icon
-        ├── reminder.svg         # Smart reminders icon
-        ├── workflow.svg         # Workflow organization icon
-        ├── check.svg            # Checkmark bullet icon
-        └── star.svg             # Star rating icon
+    ├── icons/
+    │   ├── bag.svg           # Shopping bag navigation icon
+    │   ├── check.svg         # Checkmark icon
+    │   ├── circular.svg      # Circular reusability icon
+    │   ├── enduring.svg      # Heirloom quality shield icon
+    │   ├── leaf.svg          # Botanical leaf icon
+    │   ├── logo.svg          # ECOVIBE botanical brand emblem
+    │   ├── star.svg          # Rating star icon
+    │   └── zen.svg           # Balanced minimalism icon
+    └── images/
+        ├── hero-lifestyle.jpg       # Editorial morning ritual scene
+        ├── product-tote.jpg         # The Everyday Tote catalog shot
+        ├── product-bottle.jpg       # The Solstice Bottle catalog shot
+        ├── product-terra.jpg        # The Terra Home Set catalog shot
+        ├── product-travel.jpg       # The Ritual Travel Kit catalog shot
+        ├── philosophy-ritual.jpg    # Mindful living tea ritual photo
+        ├── journal-morning.jpg      # Morning routine journal essay
+        ├── journal-routine.jpg      # Sustainable kitchen pantry photo
+        ├── journal-guide.jpg        # Minimalist interior design photo
+        ├── avatar-1.jpg             # Demo reviewer portrait
+        ├── avatar-2.jpg             # Demo reviewer portrait
+        └── avatar-3.jpg             # Demo reviewer portrait
 ```
 
 ---
 
 ## 🚀 How to Run Locally
 
-### Option 1: Using Python (Recommended)
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Tejaswini-2006/Cognetix_ProductLandingPage.git
-   cd Cognetix_ProductLandingPage
-   ```
-2. Start a local server:
-   ```bash
-   python -m http.server 8080
-   ```
-3. Open your browser and navigate to:
-   ```
-   http://localhost:8080/index.html
-   ```
+Because this project uses standard HTML5, CSS3, and JavaScript, **no build steps, compiler, or package manager are required**.
 
-### Option 2: Using VS Code Live Server
-1. Open the project folder in **Visual Studio Code**.
-2. Install the **Live Server** extension by Ritwick Dey if not already installed.
-3. Right-click on `index.html` and select **Open with Live Server**.
+### Method 1: Direct Browser Opening
+1. Clone or download the repository to your computer.
+2. Double-click `index.html` to open it directly in Google Chrome, Mozilla Firefox, Microsoft Edge, or Safari.
 
-### Option 3: Direct Browser File Access
-Double-click `index.html` in your file explorer or open it directly in Google Chrome, Microsoft Edge, Mozilla Firefox, or Safari.
+### Method 2: Local HTTP Server (Recommended)
+Running via a local HTTP server ensures smooth asset fetching and font rendering:
+
+```bash
+# Using Python 3
+python -m http.server 8000
+
+# Using Node.js (npx serve)
+npx -y serve .
+
+# Using VS Code Live Server extension
+Right-click index.html -> "Open with Live Server"
+```
+Then navigate to `http://localhost:8000` (or the port specified).
 
 ---
 
-## 🧪 Testing Checklist & Verification
+## 🧪 Testing & Verification Guide
 
-All items below have been thoroughly tested across multiple viewports and verified error-free:
+### 1. Responsive Viewport Testing
+Open browser Developer Tools (`F12` or `Ctrl + Shift + I` / `Cmd + Option + I`), toggle device toolbar (`Ctrl + Shift + M`), and test:
+- **Mobile Viewports (360px & 390px):** Verify announcement bar wraps gracefully, hamburger menu operates, hero content stacks smoothly, product grid displays in 1 column, and no horizontal overflow occurs (`scrollWidth === clientWidth`).
+- **Tablet (768px):** Verify 2-column product grid, balanced split layout, and comfortable tap targets.
+- **Desktop (1200px+):** Verify 4-column product grid, sticky header with blur, hover states, and maximum container centering.
 
-- [x] **Page Load & Assets:** All HTML, CSS, JavaScript, images, and SVG icons load with HTTP 200 (no 404s).
-- [x] **Navigation Bar:** Desktop links scroll smoothly to matching section anchors (`#features`, `#benefits`, `#how-it-works`, `#testimonials`, `#contact`).
-- [x] **Active Scrollspy:** Nav links automatically highlight as user scrolls down the page.
-- [x] **Mobile Menu Toggle:** Responsive hamburger button opens/closes drawer menu at `< 768px`; auto-closes on link click or outside click.
-- [x] **Hero Focus Timer:** Start / Pause / Resume / Reset buttons count down accurately with minutes and seconds display.
-- [x] **Interactive Task Checklist:** Checkboxes toggle strike-through state and dynamically update the progress counter (`X of 3 Done`); triggers celebratory toast on completion.
-- [x] **Features Category Filter:** Filter tabs correctly isolate *All*, *Organization*, *Analytics*, and *Collaboration* cards.
-- [x] **Get Started Modal Dialog:** Opens via any CTA button across the page with backdrop blur; traps focus; closes via close button, outside click, or ESC key.
-- [x] **Modal Form Validation:** Validates full name and email; displays mock workspace URL and 14-day Pro trial badge on submission.
-- [x] **Contact Form:** Validates name, email, and message; displays loading state and confirmation toast.
-- [x] **Toast Notifications:** Reusable toast alerts display with icons and slide in/out seamlessly.
-- [x] **Dynamic Copyright Year:** Footer year dynamically reflects current calendar year via JavaScript.
-- [x] **Back to Top Button:** Smoothly brings the viewport back to top.
-- [x] **Responsive Layout:** Tested and verified at:
-  - Mobile: `360px` - `420px` (stacked cards, touch targets, hamburger nav)
-  - Tablet: `768px` - `1024px` (2-column grids, adjusted typography)
-  - Desktop: `1200px+` (3-column grids, side-by-side hero layout)
-- [x] **Zero Console Errors:** Verified clean console logs with zero uncaught exceptions.
-- [x] **Accessibility:** Proper heading structure (`h1` - `h4`), color contrast ratios, `aria-labels`, `aria-expanded`, and reduced-motion media query support.
+### 2. Interactive Feature Testing
+- **Navigation:** Click each anchor link (`#hero`, `#collection`, `#philosophy`, `#impact`, `#journal`). Ensure smooth scrolling stops with proper padding above section headings.
+- **Mobile Navigation:** Open menu via hamburger button, test backdrop tap to close, and ensure clicking any link closes the drawer automatically.
+- **Filter Tabs:** Click *Bags & Carry*, *Drinkware*, *Home & Ritual*, and *All Objects*. Verify relevant product cards filter with zero layout flicker.
+- **Add to Bag & Drawer:**
+  - Click *Add to Bag* on any card: notice header badge incrementing with a pop animation and toast confirmation.
+  - Open bag via top-right shopping icon: test `+` and `−` quantity buttons, test item removal, verify free shipping progress bar updates dynamically.
+- **Modals:**
+  - Click *Discover Product* on any product card: verify modal opens with specifications. Press `Escape` or click `✕` to dismiss.
+  - Click *Read Story* in the Journal section: verify article text displays in editorial typography. Press `Escape` to close.
+- **Habit Calculator:** Move the frequency slider (1 to 7 days) and select different habits: verify annual avoided count updates in real time.
+- **Newsletter Form:** Test an invalid email format (e.g., `test@`) to verify inline validation feedback; enter a valid address to verify success toast.
+- **Back to Top:** Scroll down past 400px; verify round floating arrow appears and smoothly scrolls to top on click.
 
 ---
 
-## 📷 Screenshots
+## 🌐 GitHub Pages Deployment Instructions
 
-| Section | Preview |
-|---|---|
-| **Hero Section & Focus Widget** | `assets/images/dashboard-preview.jpg` |
-| **Features Section** | Grid layout with interactive category filtering |
-| **Benefits & How It Works** | 3-step workflow roadmap with progress line |
-| **Testimonials** | Modern glass cards featuring Sarah, Alex, and Priya |
+To publish this project live for free using GitHub Pages:
 
----
-
-## 🌐 Live Demo & Deployment
-
-- **GitHub Repository:** [https://github.com/Tejaswini-2006/Cognetix_ProductLandingPage](https://github.com/Tejaswini-2006/Cognetix_ProductLandingPage)
-- **GitHub Pages Live Demo:** [https://tejaswini-2006.github.io/Cognetix_ProductLandingPage/](https://tejaswini-2006.github.io/Cognetix_ProductLandingPage/)
-
-*(Note: Live demo will be available once GitHub Pages is enabled under repository settings: Settings > Pages > Source: Deploy from branch `main` / root).*
+1. Open your repository on GitHub:  
+   [https://github.com/Tejaswini-2006/Cognetix_ProductLandingPage](https://github.com/Tejaswini-2006/Cognetix_ProductLandingPage)
+2. Navigate to **Settings** (top tab navigation).
+3. In the left sidebar, click on **Pages** (under the "Code and automation" section).
+4. Under **Build and deployment**:
+   - **Source:** Select `Deploy from a branch`.
+   - **Branch:** Select `main` (or `master`), and set folder to `/(root)`.
+   - Click **Save**.
+5. Wait 1–2 minutes for GitHub Actions to build and deploy your site.
+6. Refresh the page to see your live URL:  
+   `https://tejaswini-2006.github.io/Cognetix_ProductLandingPage/`
 
 ---
 
-## 🎓 Internship Submission Details
+## ⚖️ Educational Demonstration Disclaimer
 
-- **Company:** Cognetix Technology
-- **Internship:** Full Stack Developer Internship
+**ECOVIBE** is a fictional brand created exclusively for educational purposes as part of the **Cognetix Technology Internship — Task 3**.  
+- All product descriptions, pricing in INR, customer reviews, quotes, and sustainability calculations are fictional demonstration elements.
+- No real commercial transactions, payments, or orders can be processed through this page.
+
+---
+
+## 👩‍💻 Author & Acknowledgements
+
+- **Developer:** Tejaswini Rakhunde ([@Tejaswini-2006](https://github.com/Tejaswini-2006))
+- **Internship Organization:** Cognetix Technology
 - **Task:** Task 3 — Product Landing Page
-- **Candidate:** Tejaswini Rakhunde
-- **GitHub:** [@Tejaswini-2006](https://github.com/Tejaswini-2006)
-
----
-
-⭐ *Built with dedication for the Cognetix Technology Full Stack Developer Internship.*
+- **Typography:** *Playfair Display* & *Plus Jakarta Sans* via Google Fonts
+- **Icons:** Custom SVG vector icons
